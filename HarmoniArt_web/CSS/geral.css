@@ -29,7 +29,7 @@ body {
 }
 
 .redes {
-    width: 30%;
+    width: 40%;
     max-width: 300px;
 
 }
@@ -100,14 +100,15 @@ a {
 }
 
 .redes a {
-    padding: 0 50px 0 0;
+    padding: 0 20% 0 0;
     box-sizing: border-box;
     height: 90%;
     width: 20%;
 }
 
 .redes a img {
-    max-height: 32px;
+    width: 10%;
+    min-width: 8px;
 }
 
 .botaoSec {
