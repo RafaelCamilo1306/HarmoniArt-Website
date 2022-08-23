@@ -1,3 +1,7 @@
+:root {
+    --corprimariaMedium: #FF9D02;
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -11,15 +15,19 @@ body {
     height: 100%;
     background-color: #131313;
 }
-#cabesalho{
+
+/*  área com o contato e botão pra entrar na área exclusiva */
+#cabecario {
     height: 10%;
     max-height: 49px;
     display: flex;
-    justify-content: flex-end;   
-    background-color: #B2A898;;
+    justify-content: flex-end;
+    background-color: #B2A898;
+    ;
 }
+
 #AreaExclusiva {
-    width: 70%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -34,7 +42,42 @@ body {
 
 }
 
+.redes a {
+    padding: 0 20% 0 0;
+    box-sizing: border-box;
+    height: 90%;
+    width: 20%;
+}
+
+.botaoSec {
+    /* deseign de botão secundário*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    box-sizing: border-box;
+    max-width: 154px;
+    max-height: 40px;
+    border: 1px solid #B2A898;
+    border-radius: 16px;
+    color: #B2A898;
+    font-weight: 700;
+    font-size: 1vw;
+    line-height: 150%;
+    text-align: center;
+}
+
+a {
+    font-family: inherit;
+    font-size: 1.3vw;
+    font-weight: 400;
+    text-decoration: none;
+    color: #131313;
+}
+
 nav {
+    position: relative;
     width: 100%;
     max-height: 140px;
     display: flex;
@@ -42,28 +85,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     left: 0px;
-    top: 48px;
-    padding: 0px 72px;
+    padding: 0px 72px 0px 42px;
     box-sizing: border-box;
     background-color: #FF9D02;
     gap: 35px;
-}
-.imgFundo{
-    width: 100%;
-    max-height: 530px;
-    box-shadow: inset 20px -40px 40px #000000;
-}
-a {
-    font-family: inherit;
-    font-size: 20px;
-    font-weight: 400;
-    text-decoration: none;
-    color: #131313;
-}
-
-.home {
-    width: 40%;
-    height: 80%;
 }
 
 .sections {
@@ -78,57 +103,71 @@ a {
     isolation: isolate;
 }
 
-#logo-header {
+#divLogo-nav {
     width: 30%;
     height: 80%;
     max-width: 350px;
     min-width: 350px;
 }
 
-#logo-header a {
+#divLogo-nav a {
     display: flex;
     flex-direction: row;
     gap: 20px;
     align-items: center;
 }
 
-#logo-header a img {
-    max-width: 100px;
-}
-
 #logoTXT {
+    color: #131313;
     flex-wrap: wrap;
     font-weight: 800;
     font-size: 24px;
     line-height: 29px;
 }
 
-.redes a {
-    padding: 0 20% 0 0;
-    box-sizing: border-box;
-    height: 90%;
-    width: 20%;
+/* inicio do corpo do site */
+header {
+    position: relative;
+    width: 100%;
+    box-shadow: inset 20px -40px 40px #000000;
 }
 
-.redes a img {
-    width: 10%;
-    min-width: 8px;
+#callAtention {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 60px;
 }
 
-.botaoSec {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 24px;
+.callToAction {
+    padding: 16px 24px;
     box-sizing: border-box;
-    max-width: 154px;
-    max-height: 40px;
-    border: 1px solid #B2A898;
+    gap: 24px;
+    max-width: 159px;
+    max-height: 56px;
+    background: var(--corprimariaMedium);
     border-radius: 16px;
-    color: #B2A898;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 24px;
+}
+
+h1 {
+    color: #FF9D02;
+    font-weight: 800;
+    font-size: 4.4vw;
+    line-height: 130%;
+}
+
+p {
+    font-weight: 400;
+    font-size: 2.1vw;
+    line-height: 180%;
+    color: #D9CCB8;
+
+}
+
+b {
+    color: white;
 }
