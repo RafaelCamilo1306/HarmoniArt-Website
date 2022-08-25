@@ -6,8 +6,7 @@
     <title>HarmoniArt</title>
     <link rel="stylesheet" href="CSS/geral.css" type="text/css">
     <link rel="stylesheet" href="CSS/imagens.css" type="text/css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -31,11 +30,11 @@
                     <nobr>Harmoniart <b>Núcleo</nobr> <br>de Ensino</b> Musical
                 </h1>
             </a>
+            <a class="material-icons" id="burguer" onclick="menu()">menu</a>
         </div>
-        
 
-       <span class="material-icons" id="burguer">menu</span>
-        <div class="sections">
+
+        <div class="sections" id="lista">
             <ul>
                 <li><a href="#">Professores</a></li>
                 <Li><a href="#">Cursos</a></Li>
@@ -55,6 +54,15 @@
         </div>
     </header>
     <hr>
+    <script>
+    function menu() {
+        if (lista.style.display == 'flex'){
+            lista.style.display  = 'none'
+        }else{
+            lista.style.display  = 'flex'
+        }
+    }
+    </script>
 </body>
 
 </html>

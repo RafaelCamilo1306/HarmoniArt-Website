@@ -62,7 +62,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 8px 24px;
+    padding: 1% 4%;
     box-sizing: border-box;
     max-width: 154px;
     max-height: 40px;
@@ -77,7 +77,7 @@ body {
 
 a {
     font-family: inherit;
-    font-size: 1.3vw;
+    font-size: 1.6vw;
     font-weight: 400;
     text-decoration: none;
     color: #131313;
@@ -87,31 +87,30 @@ nav {
     position: relative;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     left: 0px;
     padding: 0px 42px 0px 42px;
     box-sizing: border-box;
     background-color: #FF9D02;
-    gap: 35px;
 }
 
 .sections {
-    width: 60%;
-    height: 44px;
+    width: 100%;
     display: none;
     justify-content: flex-end;
-    align-items: center;
     padding: 0px;
     gap: 78px;
     isolation: isolate;
 }
 
 #divLogo-nav {
-    width: 30%;
+    width: 100%;
     height: 80%;
-    max-width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #divLogo-nav a {
@@ -185,13 +184,25 @@ hr{
     width: 90%;
 }
 ul{
-    display: none;
+    display: block;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
+    height: 100%;
     justify-content: space-between;
+
 }
 ul li{
     list-style: none;
+    width: 100%;
+    display: flex;
+    padding: 1%;
+    box-sizing: border-box;
+    justify-content: flex-end;
+
+}
+#burguer{
+    max-width: 50px;
+    cursor: pointer;
 }
 @media screen and (min-width: 768px){
     .callToAction{
@@ -203,15 +214,32 @@ ul li{
     .botaoSec{
         padding: 1% 5.8%;
     }nav{
-        max-height: 140px;
+        flex-direction: row;
+        max-height: 100px;
         padding: 0px 72px 0px 42px;
 
     }ul{
         display: flex;
+        width: 80%;
         flex-direction: row;
-    }.sections{
+        justify-content: center;
+    }ul li{
+        width: 50%;
+        height: 100%;
         display: flex;
-    }span{
+        align-items: center;
+    }
+    .sections{
+        height: 44px;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }#burguer{
         visibility: hidden;
+    }#divLogo-nav {
+        width: 30%;
+        height: 80%;
+        max-width: 350px;
     }
 }
