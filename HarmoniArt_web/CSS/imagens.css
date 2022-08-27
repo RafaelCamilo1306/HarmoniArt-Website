@@ -9,12 +9,24 @@
     min-width: 35px;
 }
 
+#divLogo-footer a img{
+    width: 25%;
+    max-width: 100px;
+    min-width: 35px;
+}
+
 .redes a img {
     width: 10%;
     min-width: 8px;
+
+}
+.redesfooter a img{
+    width: 100%;
+    height: 100%;
 }
 @media screen and (min-width: 768px){
     #divLogo-nav a img {
         max-width: 100px;
     }
+
 }
