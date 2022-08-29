@@ -6,10 +6,13 @@
     <title>HarmoniArt</title>
     <link rel="stylesheet" href="CSS/geral.css" type="text/css">
     <link rel="stylesheet" href="CSS/imagens.css" type="text/css">
+    <link rel="stylesheet" href="CSS/carrossel.css">
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
+<!--acesso a parte do sistema -->
     <div id="cabecario">
         <div id="AreaExclusiva">
             <div class="redes">
@@ -22,12 +25,13 @@
             </a>
         </div>
     </div>
+<!--Barra de navegação-->
     <nav>
         <div id="divLogo-nav">
             <a>
                 <img src="IMG/logo.png">
                 <h1 id="logoTXT">
-                    <nobr>Harmoniart <b>Núcleo</nobr> <br>de Ensino</b> Musical
+                    <nobr>Harmoniart <b>Núcleo</b></nobr> <br><b> de Ensino</b> Musical
                 </h1>
             </a>
             <a class="material-icons" id="burguer" onclick="menu()">menu</a>
@@ -44,30 +48,89 @@
         </div>
 
     </nav>
-
+<!--sessão do herói-->
     <header>
         <img src="IMG/fundoHome.png" class="imgFundo">
-        <h1><b>Música com</b> seriedade <b><br>te levando ao </b>palco</h1>
+        <h1 id="titleHero"><b>Música com</b> seriedade <b><br>te levando ao </b>palco</h1>
         <div id="headerSubButton">
             <p>Deseja fazer uma aula experimental?<br>Inscreva-se e entraremos em contato!</p>
             <a href="#" class="callToAction">Inscreva-se</a>
         </div>
     </header>
     <hr>
+    <h1><b>Seus </b>Professores</h1>
+<!-----Carrossel ----->
+    <div class="conteiner">
+        <div class="slides">
 
+            <div class="slide" id="s1">
+                <div class="descricao">
+                    <h3>Professor<b> Ciclano</b></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+                        mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut
+                        interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+                        aptent taciti sociosqu ad litora </p>
+                </div>
+                <img src="IMG/prof.jpg" alt="">
+            </div>
+            <div class="slide">
+                <div class="descricao">
+                    <h3>Professor<b> Fulano</b></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+                        mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut
+                        interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+                        aptent taciti sociosqu ad litora </p>
+                </div>
+                <img src="IMG/prof.jpg" alt="">
+            </div>
+            <div class="slide">
+                <div class="descricao">
+                    <h3>Professor<b> Deutrano</b></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+                        mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut
+                        interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+                        aptent taciti sociosqu ad litora </p>
+                </div>
+                <img src="IMG/prof.jpg" alt="">
+            </div>
+            <div class="slide">
+                <div class="descricao">
+                    <h3>Professor<b> ciclano</b></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+                        mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut
+                        interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+                        aptent taciti sociosqu ad litora </p>
+                </div>
+                <img src="IMG/prof.jpg" alt="">
+            </div>
+            <div class="slide">
+                <div class="descricao">
+                    <h3>Professor<b> ciclano</b></h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+                        mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut
+                        interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+                        aptent taciti sociosqu ad litora </p>
+                </div>
+                <img src="IMG/prof.jpg" alt="">
+            </div>
 
-
-
-
-
-
+            <div class="navegation">
+                <label class="circle" for="slide1" id="label1" onclick="actualizeLabelColor(1)"></label>
+                <label class="circle" for="slide2" id="label2" onclick="actualizeLabelColor(2)"></label>
+                <label class="circle" for="slide3" id="label3" onclick="actualizeLabelColor(3)"></label>
+                <label class="circle" for="slide4" id="label4" onclick="actualizeLabelColor(4)"></label>
+                <label class="circle" for="slide5" id="label5" onclick="actualizeLabelColor(5)"></label>
+            </div>
+        </div>
+    </div>
+<!-- footer -->
     <footer>
         <div id="divLogo-footer">
             <a>
                 <img src="IMG/logo.png">
                 <h1 id="logoTXT">
                     <nobr>Harmoniart <b>Núcleo</nobr> <br>de Ensino</b> Musical
-                </h1>
+                </h1>   
             </a>
             <ul>
                 <li><a href="#">Professores</a></li>
@@ -95,6 +158,34 @@
                 lista.style.display = 'flex'
             }
         }
+        function actualizeLabelColor(labelId) {
+            for (let i = 1; i <= 5; i++) {
+                let label = document.getElementById("label" + i);
+                label.style.background = "transparent";
+                label.style.borderColor = "#FFF";
+
+            }
+            let selectedLabel = document.getElementById("label" + labelId);
+            selectedLabel.style.background = "#FF9D02";
+            selectedLabel.style.borderColor = "#FF9D02";
+
+            let s1=document.getElementById("s1")
+            if (labelId == "1"){
+                s1.style.marginLeft="0";
+            }else if (labelId == "2"){
+                s1.style.marginLeft="-20%";
+            }else if (labelId == "3"){
+                s1.style.marginLeft="-40%";
+            }else if (labelId == "4"){
+                s1.style.marginLeft="-60%";
+            }else{
+                s1.style.marginLeft="-80%";
+            }
+        }
+
+        const defaultLabel = document.getElementById("label1");
+        defaultLabel.style.background = "#FF9D02";
+        defaultLabel.style.borderColor = "#FF9D02";
     </script>
 </body>
 
