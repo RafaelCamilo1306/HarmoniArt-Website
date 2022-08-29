@@ -96,7 +96,7 @@ b{
 }
 
 .slides input {
-    display: none;
+    display:     none;
 }
 
 #slide1:checked~.s1 {
