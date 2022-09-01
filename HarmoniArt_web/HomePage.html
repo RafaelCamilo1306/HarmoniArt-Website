@@ -6,8 +6,6 @@
     <title>HarmoniArt</title>
     <link rel="stylesheet" href="CSS/geral.css" type="text/css">
     <link rel="stylesheet" href="CSS/imagens.css" type="text/css">
-    <link rel="stylesheet" href="CSS/carrossel.css">
-
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
@@ -20,7 +18,7 @@
                 <a href="#"><img src="IMG/insta.png"></a>
                 <a href="#"><img src="IMG/whats.png"></a>
             </div>
-            <a href="#" class="botaoSec">
+            <a href="HTML/login.html" class="botaoSec">
                 <nobr>Área Exclusiva</nobr>
             </a>
         </div>
@@ -127,7 +125,7 @@
     <hr>
 <!-- footer -->
 
-    <script>
+    <script src="JavaScript/carrossel.js">
         function menu() {
             if (lista.style.display == 'flex') {
                 lista.style.display = 'none'
@@ -135,34 +133,6 @@
                 lista.style.display = 'flex'
             }
         }
-        function actualizeLabelColor(labelId) {
-            for (let i = 1; i <= 5; i++) {
-                let label = document.getElementById("label" + i);
-                label.style.background = "transparent";
-                label.style.borderColor = "#FFF";
-
-            }
-            let selectedLabel = document.getElementById("label" + labelId);
-            selectedLabel.style.background = "#FF9D02";
-            selectedLabel.style.borderColor = "#FF9D02";
-
-            let s1=document.getElementById("s1")
-            if (labelId == "1"){
-                s1.style.marginLeft="0";
-            }else if (labelId == "2"){
-                s1.style.marginLeft="-20%";
-            }else if (labelId == "3"){
-                s1.style.marginLeft="-40%";
-            }else if (labelId == "4"){
-                s1.style.marginLeft="-60%";
-            }else{
-                s1.style.marginLeft="-80%";
-            }
-        }
-
-        const defaultLabel = document.getElementById("label1");
-        defaultLabel.style.background = "#FF9D02";
-        defaultLabel.style.borderColor = "#FF9D02";
     </script>
 </body>
 
