@@ -140,14 +140,24 @@ header {
 h1{
     position: relative;
     top: 0;
-    color: #FF9D02;
+    color: var(--corprimariaMedium);
     width: 100%;
     text-align: center;
     font-weight: 800;
     font-size: 4.4vw;
 }
+h3 {
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--corprimariaMedium);
+    gap:10px
+}
 b {
-    color: #000;
+    color: #fff;
 }
 
 
@@ -193,8 +203,8 @@ p {
 }
 
 hr {
-    margin-top: 2%;
-    margin-bottom: 2%;
+    position: relative;
+    margin-top: 5%;
     background-color: var(--corgray700);
     width: 90%;
 }
@@ -221,6 +231,87 @@ ul li {
 #burguer {
     max-width: 50px;
     cursor: pointer;
+}
+/* area do carrossel */
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.conteiner {
+    height: 85%;
+    width: 85%;
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slide {
+    display: flex;
+    height: 100%;
+    width: 20%;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 15%;
+    transition: .6s;
+}
+
+.slide img {
+    height: 90%;
+    width: 90%;
+}
+
+.descricao {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15%;
+    padding:0 1% 1% 1%;
+    box-sizing: border-box;
+}
+
+.descricao p {
+    font-weight: 600;
+    font-size: 1.5vw;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #F1F1F1;
+    text-align: justify;
+}
+
+.navegation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.circle:hover {
+    background-color: #FF9D02;
+    border-color: #FF9D02;
+}
+
+.slides input {
+    display:     none;
 }
 
 /*  area do footer */
