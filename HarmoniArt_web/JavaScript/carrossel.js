@@ -25,3 +25,11 @@ function actualizeLabelColor(labelId) {
 const defaultLabel = document.getElementById("label1");
 defaultLabel.style.background = "#FF9D02";
 defaultLabel.style.borderColor = "#FF9D02";
+
+function menu() {
+    if (lista.style.display == 'flex') {
+        lista.style.display = 'none'
+    } else {
+        lista.style.display = 'flex'
+    }
+}
