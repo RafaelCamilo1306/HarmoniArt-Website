@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="CSS/geral.css" type="text/css">
     <link rel="stylesheet" href="CSS/imagens.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
@@ -32,18 +34,20 @@
                     <nobr>Harmoniart <b>Núcleo</b></nobr> <br><b> de Ensino</b> Musical
                 </h1>
             </a>
-            <a class="material-icons" id="burguer" onclick="menu()">menu</a>
         </div>
+        
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
 
-
-        <div class="sections" id="lista">
-            <ul>
-                <li><a href="#">Professores</a></li>
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Contate-nos</a></li>
-            </ul>
-        </div>
+        <ul class="sections" id="lista">
+            <li><a href="#">Professores</a></li>
+            <li><a href="#">Cursos</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Contate-nos</a></li>
+        </ul>
 
     </nav>
     <!--sessão do herói-->
@@ -126,31 +130,31 @@
     <!-- footer -->
     <footer>
 
-            <div id="linkFooter">
-                <div id="logoFooter">
-                    <img src="IMG/logo.png" alt="">
-                    <h1 id="logoTXT">
-                        <nobr>HarmoniArt <b> Nucleo </nobr><br> de ensino </b>Musical
-                    </h1>
-                </div>
-                <div id="listafooter">
-                    <ul>
-                        <li><a href="#">Contate-nos</a></li>
-                        <li><a href="#">Estude com agente</a></li>
-                        <li><a href="#">Cursos</a></li>
-                    </ul>
-                </div>
+        <div id="linkFooter">
+            <div id="logoFooter">
+                <img src="IMG/logo.png" alt="">
+                <h1 id="logoTXT">
+                    <nobr>HarmoniArt <b> Nucleo </nobr><br> de ensino </b>Musical
+                </h1>
             </div>
-            <hr id="hrfooter">
+            <div id="listafooter">
+                <ul>
+                    <li><a href="#">Contate-nos</a></li>
+                    <li><a href="#">Estude com agente</a></li>
+                    <li><a href="#">Cursos</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr id="hrfooter">
+        <div class="redesFoot">
+            <a href="#"><img src="IMG/facebookFoot.png"></a>
+            <a href="#"><img src="IMG/instaFoot.png"></a>
+            <a href="#"><img src="IMG/whatsFoot.png"></a>
+        </div>
+
     </footer>
-    <script src="JavaScript/carrossel.js">
-        function menu() {
-            if (lista.style.display == 'flex') {
-                lista.style.display = 'none'
-            } else {
-                lista.style.display = 'flex'
-            }
-        }
+    <script src="JavaScript/carrossel.js"></script>
+
     </script>
 </body>
 

@@ -1,0 +1,93 @@
+nav {
+    position: relative;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FF9D02;
+}
+
+#divLogo-nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#divLogo-nav a {
+    display: flex;
+    align-items: center;
+}
+
+#logoTXT {
+    color: #131313;
+    font-weight: 800;
+    font-size: 1.6vw;
+    line-height: 130%;
+}
+
+.sections {
+    display: flex;
+    list-style: none;
+}
+
+.sections li {
+    margin-left: 1%;
+    justify-content: center;
+
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@media screen and (min-width:776px) {
+    nav {
+        flex-direction: row;
+        max-height: 100px;
+        padding: 0px 72px 0px 42px;
+
+    }
+
+    .sections {
+        display: flex;
+        width: 80%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .sections li {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .sections {
+        height: 44px;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    #burguer {
+        visibility: hidden;
+    }
+
+    #divLogo-nav {
+        width: 30%;
+        height: 80%;
+        max-width: 350px;
+    }
+}
