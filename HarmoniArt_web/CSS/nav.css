@@ -1,12 +1,12 @@
 nav {
     position: relative;
-    height: 20vh;
+    height: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #FF9D02;
 }
-
+/* area da logo*/
 #divLogo-nav {
     height: 100%;
     display: flex;
@@ -23,20 +23,23 @@ nav {
 #logoTXT {
     color: #131313;
     font-weight: 800;
-    font-size: 1.6vw;
+    font-size: 1.4vw;
     line-height: 130%;
 }
+/* area da lista*/
 
 .sections {
+    width: 30%;
     display: flex;
     list-style: none;
+    justify-content: center;
 }
 
 .sections li {
-    margin-left: 1%;
-    justify-content: center;
-
+    margin-left: 5%;
+    align-items: center;
 }
+/* area do menu*/
 
 .mobile-menu {
     display: none;
@@ -50,44 +53,8 @@ nav {
     margin: 8px;
     transition: 0.3s;
 }
-
-@media screen and (min-width:776px) {
-    nav {
-        flex-direction: row;
-        max-height: 100px;
-        padding: 0px 72px 0px 42px;
-
-    }
-
-    .sections {
-        display: flex;
-        width: 80%;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .sections li {
-        width: 50%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
-
-    .sections {
-        height: 44px;
-        width: 60%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
-
-    #burguer {
-        visibility: hidden;
-    }
-
-    #divLogo-nav {
-        width: 30%;
-        height: 80%;
-        max-width: 350px;
+@media(max-width:999px){
+    nav{
+        height:5vh;
     }
 }
