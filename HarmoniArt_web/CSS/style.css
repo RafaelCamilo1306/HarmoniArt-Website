@@ -1,3 +1,16 @@
+:root {
+    --corPrimariaMedium: #FF9D02;
+    --corPrimariaDark100:#131313;
+    --corPrimariaDark68:rgb(0, 0, 0,.68);
+    --corPrimariaDark40:rgb(0, 0, 0,.40);
+    --corGray900: #2E2517;
+    --corGray700: #80786C;
+    --corGray600: #B2A898;
+    --corGray500: #CCC4B8;
+    --corGray300: #D9CCB8;
+    --corGray200: #E5DDCF;
+    --corGray100: #E5E1DA;
+}
 /*  área com o contato e botão pra entrar na área exclusiva */
 #cabecario {
     position: relative;
@@ -52,8 +65,7 @@
 }
 
 a {
-    font-family: inherit;
-    font-size: 1.6vw;
+    font-size: 1.1vw;
     font-weight: 400;
     text-decoration: none;
     color: #131313;
@@ -73,7 +85,7 @@ header {
 h1 {
     position: relative;
     top: 0;
-    color: var(--corprimariaMedium);
+    color: var(--corPrimariaMedium);
     width: 70%;
     text-align: center;
     font-weight: 800;
@@ -87,7 +99,7 @@ h3 {
     display: flex;
     align-items: center;
     text-align: center;
-    color: var(--corprimariaMedium);
+    color: var(--corPrimariaMedium);
     gap: 10px
 }
 
@@ -122,7 +134,7 @@ p {
     gap: 24px;
     max-width: 159px;
     max-height: 56px;
-    background: var(--corprimariaMedium);
+    background: var(--corPrimariaMedium);
     border-radius: 16px;
     font-weight: 400;
     font-size: 1.5vw;
@@ -142,10 +154,6 @@ hr {
     margin-top: 5%;
     background-color: var(--corgray700);
     width: 90%;
-}
-#burguer {
-    max-width: 50px;
-    cursor: pointer;
 }
 
 /* area do carrossel */
@@ -236,7 +244,7 @@ footer {
     align-items: center;
     padding: 2% 5%;
     box-sizing: border-box;
-    background-color: var(--corprimariaMedium);
+    background-color: var(--corPrimariaMedium);
     top: 40%;
 }
 
