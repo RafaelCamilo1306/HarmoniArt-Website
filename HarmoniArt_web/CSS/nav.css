@@ -1,6 +1,6 @@
 nav {
     position: relative;
-    height: 10vh;
+    height: 15vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -10,13 +10,13 @@ nav {
 #divLogo-nav {
     height: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
+    
 }
 
 #divLogo-nav a {
     display: flex;
+     gap:5%;
     align-items: center;
 }
 
@@ -29,14 +29,14 @@ nav {
 /* area da lista*/
 
 .sections {
-    width: 30%;
+    width:45%;
     display: flex;
     list-style: none;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .sections li {
-    margin-left: 5%;
+    font-size: 1.3vw;
     align-items: center;
 }
 /* area do menu*/
@@ -47,14 +47,58 @@ nav {
 }
 
 .mobile-menu div {
-    width: 32px;
+    width: 25px;
     height: 2px;
-    background: #fff;
+    background: #131;
     margin: 8px;
     transition: 0.3s;
 }
-@media(max-width:999px){
+.sections.active{
+    transform: translateX(0);
+    transition: 0.3s ease-in;
+}
+@media(max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
     nav{
-        height:5vh;
+        height: 10vh;
+    }
+    .sections{
+       position: absolute;
+       top:10vh;
+       right: 0;
+       width: 30vw;
+       height: 90vh;
+       background-color: #FF9D02;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-around;
+       transform: translateX(100%);
+       transition: 0.3s ease-out;
+       z-index: 1;
+    }
+    .sections li{
+        margin-left: 0;
+        font-size: 2vw;
+        transition: 0.3s;
+    }
+    .sections li a:hover{
+        padding: 1%;
+        font-size: 1.5vw;
+        box-sizing: border-box;
+        transition: 0.7s;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .mobile-menu.active .line1{
+        transform: translate(-8px, 8px) rotate(-45deg);
+    }
+    .mobile-menu.active .line2{
+        opacity: 0;
+    }
+    .mobile-menu.active .line3{
+        transform: translate(-8px, -12px) rotate(45deg);
     }
 }

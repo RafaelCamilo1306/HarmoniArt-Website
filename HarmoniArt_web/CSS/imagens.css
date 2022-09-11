@@ -1,7 +1,8 @@
 .imgFundo {
-    width: 100%;
-    max-height: 500px;
     position: relative;
+    width: 100%;
+    max-height: 350px;
+
 }
 
 #divLogo-nav a img {
@@ -28,12 +29,12 @@
 @media screen and (min-width: 768px) {
     #divLogo-nav a img {
         width: 40%;
-        max-width: 100px;
+        max-width: 90px;
     }
     #logoFooter img{
         max-width: 93px;
     }
     .redesFoot a img{
-        width: 50%;
+        width: 40%;
     }
 }
