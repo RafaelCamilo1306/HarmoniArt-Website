@@ -40,6 +40,8 @@ hr {
     margin-top: 5%;
     background-color: var(--corgray700);
     width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 p {

@@ -17,8 +17,8 @@
     min-width: 35px;
 }
 
-.redes a img {
-    width: 10%;
+.redes img {
+    width:30%;
     min-width: 8px;
 }
 .redesFoot a img{
@@ -33,6 +33,9 @@
     }
     #logoFooter img{
         max-width: 93px;
+    }
+    .redes a img{
+        width: 40%;
     }
     .redesFoot a img{
         width: 40%;

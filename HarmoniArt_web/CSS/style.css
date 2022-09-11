@@ -1,8 +1,8 @@
 :root {
     --corPrimariaMedium: #FF9D02;
-    --corPrimariaDark100:#131313;
-    --corPrimariaDark68:rgb(0, 0, 0,.68);
-    --corPrimariaDark40:rgb(0, 0, 0,.40);
+    --corPrimariaDark100: #131313;
+    --corPrimariaDark68: rgb(0, 0, 0, .68);
+    --corPrimariaDark40: rgb(0, 0, 0, .40);
     --corGray900: #2E2517;
     --corGray700: #80786C;
     --corGray600: #B2A898;
@@ -11,10 +11,11 @@
     --corGray200: #E5DDCF;
     --corGray100: #E5E1DA;
 }
+
 /*  área com o contato e botão pra entrar na área exclusiva */
 #cabecario {
     position: relative;
-    height: 10vh;
+    height: 5vh;
     display: flex;
     justify-content: flex-end;
     background-color: #B2A898;
@@ -29,40 +30,39 @@
     background-color: #472C00;
     padding: 1% 2% 1% 0;
     box-sizing: border-box;
+    gap: 20px;
 }
 
 .redes {
     width: 40%;
-    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
 
 }
-
-.redes a {
-    padding: 0 20% 0 0;
-    box-sizing: border-box;
-    width: 20%;
+.redes a{
+    display: flex;
+    justify-content: center;
 }
-
 .botaoSec {
     /* design de botão secundário*/
+    width: 10vw;
+    padding: 1% 12% ;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
-    box-sizing: border-box;
+    justify-content: center;
+    color: #B2A898;
     border: 1px solid #B2A898;
     border-radius: 16px;
-    color: #B2A898;
     font-weight: 700;
-    font-size: 1vw;
-    text-align: center;
+    font-size: 1.4vw;
+
 }
 
-a { 
+a {
     text-decoration: none;
     color: #131313;
 }
-
-/*area de navegação*/
-
 
 /* inicio do corpo do site */
 header {
@@ -118,12 +118,12 @@ p {
 }
 
 .callToAction {
-    padding: 4% 6%; 
-    width: 35%;   
+    padding: 2% 6%;
+    width: 50%;
     text-align: center;
     box-sizing: border-box;
     background: var(--corPrimariaMedium);
-    border-radius: 16px;    
+    border-radius: 16px;
     font-weight: 400;
     font-size: 1.5vw;
 }
@@ -136,7 +136,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap:5%;
+    gap: 5%;
 }
 
 hr {
@@ -155,11 +155,14 @@ hr {
 }
 
 .conteiner {
-    margin-left: 5%;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
     height: 30%;
     width: 80%;
     overflow: hidden;
     position: relative;
+
 }
 
 .slide {
@@ -261,15 +264,18 @@ footer {
     align-items: center;
     list-style: none;
 }
+
 #listafooter li {
     margin-left: 5%;
     align-items: center;
 }
-#listafooter li a{
-    
+
+#listafooter li a {
+
     font-size: 0.5em;
 }
-#hrfooter{
+
+#hrfooter {
     margin: 0;
     width: 100%;
 }
@@ -278,43 +284,51 @@ footer {
     display: flex;
     justify-content: space-between;
 }
-
-.redes a {
-    padding: 0 20% 0 0;
-    box-sizing: border-box;
-    height: 90%;
-    width: 60%;
-}
-
 /* responsividade */
 @media screen and (min-width: 768px) {
-    h1{
+    h1 {
         width: 100%;
     }
+
     .callToAction {
         padding: 2% 4%;
+        width: 40%;
     }
 
     #cabecario {
-        max-height: 49px;
+       height: 8vh;
+    }
+    #AreaExclusiva{
+        gap:40px;
+    }
+    
+    .redes{
+        width: 30%;
     }
 
     .botaoSec {
-        padding: 1% 5.8%;
+        padding: 1% 8%;
+        font-size: 1vw;
+    }
 
-    }.conteiner{
+    .conteiner {
         height: 75%;
     }
-    .circle{
+
+    .circle {
+        width: 1.3vw;
         height: 2vh;
     }
-    footer{
+
+    footer {
         height: 30%;
     }
-    #redesFoot{
+
+    #redesFoot {
         width: 30vw;
     }
-    #listafooter li a{
+
+    #listafooter li a {
         font-size: 1.2vw;
     }
 }
