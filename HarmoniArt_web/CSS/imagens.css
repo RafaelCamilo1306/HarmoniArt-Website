@@ -1,22 +1,22 @@
 .imgFundo {
     position: relative;
     width: 100%;
-    max-height: 350px;
+    height: 24vh;
 
 }
-
 #divLogo-nav a img {
     width: 15%;
-    min-width: 5px;
+    min-width: 4px;
     filter: drop-shadow(1px 1px 1px #000);
 }
 
 #logoFooter img {
     width: 25%;
     max-width: 100px;
-    min-width: 35px;
-}
+    min-width: 36px;
+    filter: drop-shadow(1px 1px 1px #000);
 
+}
 .redes img {
     width:30%;
     min-width: 8px;
@@ -25,8 +25,14 @@
     width: 25%;
     min-width: 8px;
 }
+#divLogo-nav a #logo2{
+    filter: drop-shadow(1px 1px 1px #f1f1f1);
+}
 
 @media screen and (min-width: 768px) {
+    .imgFundo{
+        height: 56vh;
+    }
     #divLogo-nav a img {
         width: 40%;
         max-width: 90px;

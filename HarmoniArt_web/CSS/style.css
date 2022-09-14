@@ -11,7 +11,18 @@
     --corGray200: #E5DDCF;
     --corGray100: #E5E1DA;
 }
-
+.areaLinha{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5% 0;
+    box-sizing: border-box;
+}
+.linha{
+    width: 90%;
+    height: 2px;
+    background-color: var(--corGray700);
+}
 /*  área com o contato e botão pra entrar na área exclusiva */
 #cabecario {
     position: relative;
@@ -139,13 +150,6 @@ p {
     gap: 5%;
 }
 
-hr {
-    position: relative;
-    margin-top: 5%;
-    background-color: var(--corgray700);
-    width: 90%;
-}
-
 /* area do carrossel */
 
 .slides {
@@ -179,6 +183,7 @@ hr {
 .slide img {
     height: 90%;
     width: 90%;
+    object-fit: cover;
 }
 
 .descricao {
@@ -193,7 +198,7 @@ hr {
 }
 
 .descricao p {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.5vw;
     line-height: 150%;
     display: flex;
@@ -284,6 +289,38 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+
+/*Tela de Login*/
+
+#login{
+    width: 24vw;
+    height: 100vh;
+    display: flex;
+    padding: 10% 0 0 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap:20%;
+    align-items: center;
+}
+#entrar{
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color:blue;
+    justify-content: space-around;
+}
+#entrar input{
+    width: 90%;
+}
+#entrar label{
+    color: var(--corPrimariaMedium);
+}
+#logoLogin{
+    color: var(--corPrimariaMedium);
+}
+
+
 /* responsividade */
 @media screen and (min-width: 768px) {
     h1 {

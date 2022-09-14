@@ -4,17 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <title>HarmoniArt</title>
-    <link rel="stylesheet" href="CSS/geral.css" type="text/css">
-    <link rel="stylesheet" href="CSS/imagens.css" type="text/css">
-    <link rel="stylesheet" href="CSS/carrossel.css">
+    <link rel="stylesheet" href="../CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/nav.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/geral.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/imagens.css" type="text/css">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
-aqui está o login
-<a href="../HomePage.html">sair</a>
-<a href="Aluno/home_Aluno.html">entrar como aluno</a>
-<a href="Professor/home_Professor.html">entrar como Professor</a>
 
+<body>
+    <div id="login">
+        <div id="divLogo-nav">
+            <a href="../HomePage.html">
+                <img src="../IMG/logo2.png" id="logo2">
+                <h1 class="logoTXT" id="logoLogin">
+                    <nobr>Harmoniart <b>Núcleo</b></nobr> <br><b> de Ensino</b> Musical
+                </h1>
+            </a>
+        </div>
+
+        <form id="entrar">
+            <div>
+            <label for="">entrar como</label>
+            <select id="">
+                <option value="aluno">Aluno</option>
+                <option value="professor">Professor</option>
+            </select>
+        </div>
+            <div>
+                <label for="">Usuario</label>
+                <input type="text">
+            </div>
+
+            <div>
+                <label for="">Senha</label>
+                <input type="text">
+            </div>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <img src="../IMG/fundoLogin.png" alt="">
 </body>
+
 </html>

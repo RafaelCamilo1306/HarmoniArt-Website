@@ -8,7 +8,6 @@ nav {
 }
 /* area da logo*/
 #divLogo-nav {
-    height: 100%;
     display: flex;
     align-items: center;
     
@@ -16,11 +15,11 @@ nav {
 
 #divLogo-nav a {
     display: flex;
-     gap:5%;
+    gap:6%;
     align-items: center;
 }
 
-#logoTXT {
+.logoTXT {
     color: #131313;
     font-weight: 800;
     font-size: 1.4vw;
@@ -29,7 +28,7 @@ nav {
 /* area da lista*/
 
 .sections {
-    width:45%;
+    width:46%;
     display: flex;
     list-style: none;
     justify-content: space-between;
