@@ -7,23 +7,16 @@ nav {
     background-color: #FF9D02;
 }
 /* area da logo*/
-#divLogo-nav {
-    display: flex;
-    align-items: center;
-    
-}
 
-#divLogo-nav a {
+.divLogo a {
     display: flex;
-    gap:6%;
+    gap:4%;
+    width: 90%;
     align-items: center;
 }
 
 .logoTXT {
     color: #131313;
-    font-weight: 800;
-    font-size: 1.4vw;
-    line-height: 130%;
 }
 /* area da lista*/
 

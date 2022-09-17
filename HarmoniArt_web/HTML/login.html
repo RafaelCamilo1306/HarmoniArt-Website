@@ -8,16 +8,18 @@
     <link rel="stylesheet" href="../CSS/nav.css" type="text/css">
     <link rel="stylesheet" href="../CSS/geral.css" type="text/css">
     <link rel="stylesheet" href="../CSS/imagens.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/components.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/tipografia.css" type="text/css">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <div id="login">
-        <div id="divLogo-nav">
+        <div class="divLogo log" >
             <a href="../HomePage.html">
                 <img src="../IMG/logo2.png" id="logo2">
-                <h1 class="logoTXT" id="logoLogin">
+                <h1 class="logoTXT dDescri24" id="logoLogin">
                     <nobr>Harmoniart <b>Núcleo</b></nobr> <br><b> de Ensino</b> Musical
                 </h1>
             </a>
@@ -25,23 +27,23 @@
 
         <form id="entrar">
             <div id="selecao">
-                <label for="">entrar como</label>
-                <select id="">
-                    <option value="aluno">Aluno</option>
-                    <option value="professor">Professor</option>
+                <label for="" class="dDescri16">entrar como</label>
+                <select class="dropDown dDescri16">
+                    <option value="aluno" class="dDescri16">Aluno</option>
+                    <option value="professor"class="dDescri16">Professor</option>
                 </select>
             </div>
             <div>
-                <label for="">Usuario</label>
-                <input type="text">
+                <label for="" class="dDescri20">Usuario</label>
+                <input type="text" class="inputs">
             </div>
 
             <div>
-                <label for="">Senha</label>
-                <input type="text">
+                <label for="" class="dDescri20">Senha</label>
+                <input type="text" class="inputs">
             </div>
 
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" class="callToAction">
         </form>
     </div>
 

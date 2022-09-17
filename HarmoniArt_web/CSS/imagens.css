@@ -6,8 +6,8 @@
     height: 24vh;
 
 }
-#divLogo-nav a img {
-    width: 15%;
+.divLogo a img {
+    width: 8%;
     min-width: 4px;
     filter: drop-shadow(1px 1px 1px #000);
 }
@@ -27,14 +27,14 @@
     width: 25%;
     min-width: 8px;
 }
-#divLogo-nav a #logo2{
+.divLogo a #logo2{
     filter: drop-shadow(1px 1px 1px #f1f1f1);
 }
 #fundoLogin{
     position: absolute;
     height: 100vh;
-    width: 76vw;
-    left: 24vw;
+    width: 72vw;
+    left: 28vw;
     top:0;
 }
 
@@ -42,9 +42,9 @@
     .imgFundo{
         height: 56vh;
     }
-    #divLogo-nav a img {
-        width: 40%;
-        max-width: 90px;
+    .divLogo a img {
+        width: 24%;
+        max-width: 140px;
     }
     #logoFooter img{
         max-width: 93px;

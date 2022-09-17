@@ -266,13 +266,13 @@ footer {
 /*Tela de Login*/
 
 #login{
-    width: 24vw;
-    height: 100vh;
+    width: 28vw;
+    height: 100%;
     display: flex;
-    padding: 8% 0 0 0;
     box-sizing: border-box;
     flex-direction: column;
-    gap:20%;
+    gap:56px;
+    justify-content: center;
     align-items: center;
     z-index: 10;
 }
@@ -280,8 +280,9 @@ footer {
     width: 80%;
     height: 40%;
     display: flex;
+    gap:10%;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-around;  
 }
 #selecao{
     display: flex;
@@ -289,10 +290,7 @@ footer {
     justify-content: flex-end;
     align-items: center;
 }
-select{
-
-}
-#entrar input{
+#entrar input[type=text]{
     width: 90%;
 }
 #entrar label{
@@ -305,9 +303,6 @@ select{
 
 /* responsividade */
 @media screen and (min-width: 768px) {
-    h1 {
-        width: 100%;
-    }
     #cabecario {
        height: 8vh;
     }
