@@ -54,21 +54,6 @@
     display: flex;
     justify-content: center;
 }
-.botaoSec {
-    /* design de botão secundário*/
-    width: 10vw;
-    padding: 1% 12% ;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #B2A898;
-    border: 1px solid #B2A898;
-    border-radius: 16px;
-    font-weight: 700;
-    font-size: 1.4vw;
-
-}
 
 a {
     text-decoration: none;
@@ -127,18 +112,6 @@ p {
     top: 40%;
     left: 5%;
 }
-
-.callToAction {
-    padding: 2% 6%;
-    width: 50%;
-    text-align: center;
-    box-sizing: border-box;
-    background: var(--corPrimariaMedium);
-    border-radius: 16px;
-    font-weight: 400;
-    font-size: 1.5vw;
-}
-
 #headerSubButton {
     position: absolute;
     top: 50%;
@@ -296,19 +269,28 @@ footer {
     width: 24vw;
     height: 100vh;
     display: flex;
-    padding: 10% 0 0 0;
+    padding: 8% 0 0 0;
     box-sizing: border-box;
     flex-direction: column;
     gap:20%;
     align-items: center;
+    z-index: 10;
 }
 #entrar{
     width: 80%;
     height: 40%;
     display: flex;
     flex-direction: column;
-    background-color:blue;
     justify-content: space-around;
+}
+#selecao{
+    display: flex;
+    gap: 4%;
+    justify-content: flex-end;
+    align-items: center;
+}
+select{
+
 }
 #entrar input{
     width: 90%;
@@ -326,12 +308,6 @@ footer {
     h1 {
         width: 100%;
     }
-
-    .callToAction {
-        padding: 2% 4%;
-        width: 40%;
-    }
-
     #cabecario {
        height: 8vh;
     }
@@ -343,10 +319,6 @@ footer {
         width: 30%;
     }
 
-    .botaoSec {
-        padding: 1% 8%;
-        font-size: 1vw;
-    }
 
     .conteiner {
         height: 75%;
