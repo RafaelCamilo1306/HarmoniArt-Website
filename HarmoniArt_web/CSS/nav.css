@@ -28,7 +28,6 @@ nav {
 }
 
 .sections li {
-    font-size: 1.3vw;
     align-items: center;
 }
 /* area do menu*/
@@ -63,7 +62,7 @@ nav {
        top:10vh;
        right: 0;
        width: 30vw;
-       height: 85vh;
+       height: 90vh;
        background-color: #FF9D02;
        flex-direction: column;
        align-items: center;
@@ -74,14 +73,7 @@ nav {
     }
     .sections li{
         margin-left: 0;
-        font-size: 2vw;
         transition: 0.3s;
-    }
-    .sections li a:hover{
-        padding: 1%;
-        font-size: 1.5vw;
-        box-sizing: border-box;
-        transition: 0.7s;
     }
     .mobile-menu{
         display: block;
@@ -95,7 +87,7 @@ nav {
     .mobile-menu.active .line3{
         transform: translate(-8px, -12px) rotate(45deg);
     }
-    #logoTXT{
-        font-size: 1.8vw;
+    .logoTXT{
+        display: none;
     }
 }

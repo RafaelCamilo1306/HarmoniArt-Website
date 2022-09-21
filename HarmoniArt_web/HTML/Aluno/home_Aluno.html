@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Àrea exclusiva-Aluno</title>
+    <link rel="stylesheet" href="../../CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="../../CSS/nav.css" type="text/css">
+    <link rel="stylesheet" href="../../CSS/geral.css" type="text/css">
+    <link rel="stylesheet" href="../../CSS/imagens.css" type="text/css">
+    <link rel="stylesheet" href="../../CSS/components.css" type="text/css">
+    <link rel="stylesheet" href="../../CSS/tipografia.css" type="text/css">
 </head>
 <body>
     <nav>
         <div class="divLogo">
-            <a href="HomePage.html">
-                <img src="IMG/logo.png">
-                <h1 class="logoTXT dDescri24">
+            <a href="../../index.html">
+                <img src="../../IMG/logo.png">
+                <h1 class="logoTXT dDescri24 logoTxtLogin">
                     <nobr>Harmoniart <b>Núcleo</b></nobr> <br><b> de Ensino</b> Musical
                 </h1>
             </a>
@@ -22,16 +28,25 @@
         </div>
 
         <ul class="sections" id="lista">
-            <li><a href="#">Professores</a></li>
-            <li><a href="#">Cursos</a></li>
-            <li><a href="#">
-                    <nobr>Sobre-nós</nobr>
-                </a></li>
-            <li><a href="#">
-                    <nobr>Contate-nos</nobr>
-                </a></li>
+            <li><a href="#" class="dDescri20">Home</a></li>
+            <li><a href="#" class="dDescri20">Dados Pessoais</a></li>
+            <li><a href="#" class="dDescri20">Horários</a></li>
+            <li><a href="#" class="dDescri20">Sair</a></li>
         </ul>
 
     </nav> 
+
+    <script>
+        const burguer= document.querySelector(".mobile-menu");
+        const navmenu = document.querySelector(".sections");
+        
+        burguer.addEventListener("click", () =>{
+        
+            burguer.classList.toggle('active')
+            navmenu.classList.toggle('active')
+        })
+        </script>
+
+        <!-- <script src="../../JavaScript/carrossel.js"></script> -->
 </body>
 </html>

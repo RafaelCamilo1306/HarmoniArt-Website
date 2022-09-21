@@ -38,7 +38,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: #472C00;
+    background-color: var(--corGray900);
     padding: 1% 2% 1% 0;
     box-sizing: border-box;
     gap: 20px;

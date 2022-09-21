@@ -25,6 +25,8 @@ function actualizeLabelColor(labelId) {
 const defaultLabel = document.getElementById("label1");
 defaultLabel.style.background = "#FF9D02";
 defaultLabel.style.borderColor = "#FF9D02";
+
+
 /*active-botão do menu burguer*/
 
 const burguer= document.querySelector(".mobile-menu");
