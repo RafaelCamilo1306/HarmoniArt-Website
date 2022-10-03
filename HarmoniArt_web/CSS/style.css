@@ -1,4 +1,4 @@
-:root {
+    :root {
     --corPrimariaMedium: #FF9D02;
     --corPrimariaDark100: #131313;
     --corPrimariaDark68: rgb(0, 0, 0, .68);
@@ -121,6 +121,9 @@ p {
     flex-direction: column;
     justify-content: space-between;
     gap: 5%;
+}
+#headerSubButton .callToAction{
+    width: 50%;
 }
 
 /* area do carrossel */
@@ -301,13 +304,26 @@ footer {
 #logoLogin{
     color: var(--corPrimariaMedium);
 }
-
-/* Area de perfil */
+/* Area do iframe */
+iframe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 68px;
+    box-sizing: border-box;
+    width: 70%;
+    height: 85%;
+    margin: 3% 0;
+    background-color: var(--corGray200);
+    border: none;
+}
+/*-- Area de perfil-- */
 
 .divPerfil{
     margin: 3%;
     width: 20%;
-    height: 70%;
+    height: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;

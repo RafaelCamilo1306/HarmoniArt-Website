@@ -7,13 +7,13 @@
 /* design de botão Primário*/
 .callToAction {
     padding: 2% 6%;
-    width: 50%;
     text-align: center;
     box-sizing: border-box;
     background: var(--corPrimariaMedium);
     border-radius: 16px;
     font-weight: 400;
     font-size: 1.5vw;
+    cursor: pointer;    
 }
 
 /* design de botão secundário*/
