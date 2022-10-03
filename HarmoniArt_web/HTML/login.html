@@ -25,7 +25,7 @@
             </a>
         </div>
 
-        <form id="entrar">
+        <form id="entrar" action="">
             <div id="selecao">
                 <label for="" class="dDescri16"><nobr>entrar como</nobr></label>
 
@@ -39,15 +39,15 @@
             </div>
             <div>
                 <label for="" class="dDescri20">Usuario</label>
-                <input type="text" class="inputs">
+                <input type="text" class="inputs" name="user">
             </div>
 
             <div>
                 <label for="" class="dDescri20">Senha</label>
-                <input type="text" class="inputs">
+                <input type="text" class="inputs" name="pass">
             </div>
 
-            <input type="submit" value="Enviar" class="callToAction">
+            <input type="submit" value="Enviar" class="callToAction" onclick="changePage()">
         </form>
     </div>
     
@@ -55,11 +55,12 @@
 
     <script>
         function changeOp(){
-            const select = document.getElementById("options");
-            const optionValue = select.options[select.selectedIndex];
-            const value= optionValue.value;
-            console.log(value)
+            let select = document.getElementById("options");
+            let optionValue = select.options[select.selectedIndex];
+            let value= optionValue.value;
+            return(value);
         }
+
     </script>   
 </body>
 

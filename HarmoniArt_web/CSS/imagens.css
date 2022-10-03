@@ -29,6 +29,7 @@
 }
 .divLogo a #logo2{
     filter: drop-shadow(1px 1px 1px #f1f1f1);
+    width: 20%;
 }
 #fundoLogin{
     position: absolute;

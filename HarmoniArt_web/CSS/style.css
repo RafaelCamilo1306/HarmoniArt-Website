@@ -264,7 +264,9 @@ footer {
 }
 
 /*Tela de Login*/
-
+.log a {
+    justify-content: center;
+}
 #login{
     width: 28vw;
     height: 100%;
@@ -291,7 +293,7 @@ footer {
     align-items: center;
 }
 #entrar input[type=text]{
-    width: 90%;
+    width: 85%;
 }
 #entrar label{
     color: var(--corPrimariaMedium);
@@ -300,7 +302,22 @@ footer {
     color: var(--corPrimariaMedium);
 }
 
+/* Area de perfil */
 
+.divPerfil{
+    margin: 3%;
+    width: 20%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 0px;
+    gap: 32px;   
+    background: var(--corGray200);
+    /* $Color/Gray/700 */
+    border: 4px solid var(--corGray700);
+    border-radius: 16px;
+}
 /* responsividade */
 @media screen and (min-width: 768px) {
     #cabecario {
