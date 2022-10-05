@@ -44,7 +44,9 @@ hr {
     left: 50%;
     transform: translateX(-50%);
 }
-
+h4{
+    color:var(--corPrimariaLight);
+}
 p {
     font-weight: 400;
     font-size: 2.1vw;

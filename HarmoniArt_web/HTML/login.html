@@ -16,7 +16,7 @@
 
 <body>
     <div id="login">
-        <div class="divLogo log" >
+        <div class="divLogo log">
             <a href="../index.html">
                 <img src="../IMG/logo2.png" id="logo2">
                 <h1 class="logoTXT dDescri24" id="logoLogin">
@@ -27,15 +27,17 @@
 
         <form id="entrar" action="/HarmoniArt_web/HTML/Aluno/home_Aluno.html">
             <div id="selecao">
-                <label for="" class="dDescri16"><nobr>entrar como</nobr></label>
+                <label for="" class="dDescri16">
+                    <nobr>entrar como</nobr>
+                </label>
+                <div id="div_select_login">
+                    <select class="dropDown dDescri16" id="options" onChange="changeOp()">
 
-                <select class="dropDown dDescri16" id="options" onChange="changeOp()">
-                    
-                    <option value="escolha" class="dDescri16">Escolha...</option>
-                    <option value="aluno" class="dDescri16">Aluno</option>
-                    <option value="professor"class="dDescri16">Professor</option>
-                </select>
-
+                        <option value="escolha" class="dDescri16">Escolha...</option>
+                        <option value="aluno" class="dDescri16">Aluno</option>
+                        <option value="professor" class="dDescri16">Professor</option>
+                    </select>
+                </div>
             </div>
             <div>
                 <label for="" class="dDescri20">Usuario</label>
@@ -50,18 +52,18 @@
             <input type="submit" value="Enviar" class="callToAction" onclick="changePage()">
         </form>
     </div>
-    
+
     <img src="../IMG/fundoLogin.png" alt="" id="fundoLogin">
 
     <script>
-        function changeOp(){
+        function changeOp() {
             let select = document.getElementById("options");
             let optionValue = select.options[select.selectedIndex];
-            let value= optionValue.value;
-            return(value);
+            let value = optionValue.value;
+            return (value);
         }
 
-    </script>   
+    </script>
 </body>
 
 </html>
