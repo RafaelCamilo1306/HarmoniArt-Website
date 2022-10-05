@@ -17,10 +17,12 @@
     }
 
     .areaLinha {
+        position: relative;
         width: 100%;
         display: flex;
         justify-content: center;
-        padding: 2% 0;
+        top: 2%;
+        padding: 1% 0;
         box-sizing: border-box;
     }
 
@@ -112,15 +114,6 @@
         font-size: 4.4vw;
     }
 
-    p {
-        font-weight: 400;
-        font-size: 2.1vw;
-        line-height: 150%;
-        color: #D9CCB8;
-        top: 40%;
-        left: 5%;
-    }
-
     #headerSubButton {
         position: absolute;
         top: 50%;
@@ -138,19 +131,32 @@
     /* area dos atrativos */
 
     #atrativos{
+        position: relative;
         display: flex;
         width: 100%;
         justify-content: center;
         gap: 15%;
+        top: 2%;
     }
     #atrativos div{
         text-align: center; 
         color:var(--corPrimariaLigth);
     }
     #cards{
+        position: relative;
         display: flex;
+        flex-wrap: wrap;
         width: 100%;
+        height: 50%;
+        margin: 5% 0;
         justify-content: space-around;
+    }
+    .card h4 {
+        text-align: center;
+        color: var(--corPrimariaLigth);
+    }    
+    .card p{
+        color: var(--corPrimariaLigth);
     }
 
     /* area do carrossel */
@@ -159,8 +165,9 @@
         display: flex;
         width: 500%;
         height: 100%;
+        margin: 0 0 5% 0;
     }
-
+    
     .conteiner {
         top: 5%;
         left: 50%;
@@ -169,7 +176,7 @@
         width: 80%;
         overflow: hidden;
         position: relative;
-
+        
     }
 
     .slide {
