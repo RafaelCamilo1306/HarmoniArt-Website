@@ -19,6 +19,15 @@
     filter: drop-shadow(1px 1px 1px #000);
 
 }
+.features{
+    width: 20%;
+}
+#History img{
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(4px 4px 4px #fff);
+
+}
 .redes img {
     width:30%;
     min-width: 8px;

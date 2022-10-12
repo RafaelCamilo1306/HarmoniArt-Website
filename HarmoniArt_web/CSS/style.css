@@ -80,11 +80,10 @@
 
     h1 {
         position: relative;
-        top: 0;
+        top: 5%;
         color: var(--corPrimariaMedium);
         text-align: center;
-        font-weight: 800;
-        font-size: 4.4vw;
+        text-transform: uppercase;
     }
 
     h3 {
@@ -112,6 +111,7 @@
         color: #FF9D02;
         font-weight: 800;
         font-size: 4.4vw;
+        text-transform: none;
     }
 
     #headerSubButton {
@@ -151,12 +151,30 @@
         margin: 5% 0;
         justify-content: space-around;
     }
-    .card h4 {
+     .card h4 { 
         text-align: center;
         color: var(--corPrimariaLigth);
     }    
     .card p{
         color: var(--corPrimariaLigth);
+    }
+    /* area do cursos */
+    #divOurCourses{
+        height: 56%;
+        margin: 4% 8%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #divOurCourses div {
+        display:flex;
+        width: 100%;
+        align-items: center;
+        color: var(--corPrimariaLigth);
+    }
+    #divOurCourses .course{
+        flex-direction: column;
     }
 
     /* area do carrossel */
@@ -169,13 +187,12 @@
     }
     
     .conteiner {
-        top: 5%;
-        left: 50%;
+        position: relative;
+        margin: 8% 0 2% 50%;
         transform: translate(-50%, 0);
         height: 30%;
         width: 80%;
         overflow: hidden;
-        position: relative;
         
     }
 
@@ -240,6 +257,32 @@
         border-color: #FF9D02;
     }
 
+    /* area "Nossa história" */
+
+    #History{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 4% 0;
+
+    }
+    #historyContent{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #historytxt{
+        width: 60%;
+        color: var(--corPrimariaLigth);
+    }
+    #historyimg{
+        width: 40%;
+        height: 100%;
+        padding: 2%;
+        box-sizing: border-box;
+    }
     /*  area do footer */
 
     footer {

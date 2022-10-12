@@ -16,6 +16,7 @@ nav {
 }
 
 .logoTXT {
+    text-transform: none;
     color: #131313;
 }
 /* area da lista*/
