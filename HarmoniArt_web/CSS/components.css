@@ -164,11 +164,11 @@
     background-color: white;
     transition: .4s;
 }
-input:checked+.toggle {
+.switch input:checked+.toggle {
     background-color: #FF0202;
 }
 
-input:checked+.toggle:before {
+.switch input:checked+.toggle:before {
     transform: translateX(26px);
 }
 
