@@ -91,4 +91,7 @@ nav {
     .logoTXT{
         display: none;
     }
+    .log .logoTXT{
+        display: block;
+    }
 }

@@ -6,38 +6,37 @@
 /* ------------- */
 
 /* H1 (56px) */
-.dTitle56 {
+.titleH1 {
     font-weight: 800;
     font-size: 56px;
-    line-height: 150%;
 }
 
 /* H2 (48px) */
-.dTitle48 {
+.titleH2 {
     font-weight: 700;
     font-size: 48px;
-    line-height: 150%;
+       
 }
 
 /* H3 (40px) */
-.dTitle40 {
+.titleH3 {
     font-weight: 600;
     font-size: 40px;
-    line-height: 150%;
+       
 }
 
 /* H4 (32px) */
-.dTitle32 {
+.titleH4 {
     font-weight: 500;
     font-size: 32px;
-    line-height: 150%;
+       
 }
 
 /* H5 (24px) */
-.dTitle24 {
+.titleH5 {
     font-weight: 400;
     font-size: 24px;
-    line-height: 150%;
+       
 }
 
 /* ------------------- */
@@ -46,113 +45,115 @@
 
 
 /* H1 (32px */
-.dDescri32 {
+.descriH1 {
     font-weight: 700;
     font-size: 32px;
-    line-height: 150%;
+       
 }
 
 /* H2 (28px) */
-.dDescri28 {
+.descriH2 {
     font-weight: 700;
     font-size: 28px;
-    line-height: 150%;
+       
 }
 
 /* H3 (24px) */
-.dDescri24 {
+.descriH3 {
     font-weight: 600;
     font-size: 24px;
-    line-height: 150%;
+       
 }
 
 /* H4 (20px) */
-.dDescri20 {
+.descriH4 {
     font-weight: 500;
     font-size: 20px;
-        line-height: 150%;
+       
 }
 
 /* H5 (16px) */
-.dDescri16 {
+.descriH5 {
     font-weight: 400;
     font-size: 16px;
 }
 
-/* ------------ */
-/* Mobile-title */
-/* ------------ */
+@media(max-width:768px) {
 
-/* H1 (28px)*/
-.mTitle28 {
-    font-weight: 800;
-    font-size: 28px;
-    line-height: 150%;
-}
+    /* ------------ */
+    /* Mobile-title */
+    /* ------------ */
 
-/* H2 (24px) */
-.mTitle24 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 150%;
-}
+    /* H1 (28px)*/
+    .titleH1 {
+        font-weight: 800;
+        font-size: 28px;
+    }
 
-/* H3 (20px) */
-.mTitle20 {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 150%;
-}
+    /* H2 (24px) */
+    .titleH2 {
+        font-weight: 700;
+        font-size: 24px;
+           
+    }
 
-/* H4 (18px) */
-.mTitle18 {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 150%;
-}
+    /* H3 (20px) */
+    .titleH3 {
+        font-weight: 600;
+        font-size: 20px;
+           
+    }
 
-/* H5 (16px) */
-.mTitle16 {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-}
+    /* H4 (18px) */
+    .titleH4 {
+        font-weight: 500;
+        font-size: 18px;
+           
+    }
 
-/* ------------------ */
-/* Mobile-Description */
-/* ------------------ */
+    /* H5 (16px) */
+    .titleH5 {
+        font-weight: 400;
+        font-size: 16px;
+           
+    }
 
-/* H1 (24px) */
-.mDescri24w {
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 150%;
-}
+    /* ------------------ */
+    /* Mobile-Description */
+    /* ------------------ */
 
-/* H2 (20px) */
-.mDescri20 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 150%;
-}
+    /* H1 (24px) */
+    .descriH1 {
+        font-weight: 800;
+        font-size: 24px;
+           
+    }
 
-/* H3 (18px) */
-.mDescri18 {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 150%;
-}
+    /* H2 (20px) */
+    .descriH2 {
+        font-weight: 700;
+        font-size: 20px;
+           
+    }
 
-/* H4 (16px) */
-.mDescri16 {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-}
+    /* H3 (18px) */
+    .descriH3 {
+        font-weight: 600;
+        font-size: 18px;
+           
+    }
 
-/* H5 (8px) */
-.mDescri8 {
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 150%;
+    /* H4 (16px) */
+    .descriH4 {
+        font-weight: 500;
+        font-size: 16px;
+           
+    }
+
+    /* H5 (8px) */
+    .descriH5 {
+        font-weight: 400;
+        font-size: 8px;
+        
+    }
 }
