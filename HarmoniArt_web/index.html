@@ -69,7 +69,9 @@
         <div id="headerSubButton">
             <h2 class=" subtitle titleH4">Deseja fazer uma aula experimental?<br>Inscreva-se e entraremos em contato!
             </h2>
-            <a href="#" class="callToAction">Inscreva-se</a>
+            <div>
+                <a class="callToAction descriH5 " id="bntSubs">Inscreva-se</a>
+            </div>s
         </div>
     </header>
     <div class="areaLinha">
@@ -265,10 +267,19 @@
     <div id="History">
         <div id="historyContent">
             <div id="historyimg">
-            <img src="IMG/logo3.png"></img>
-        </div>
+                <img src="IMG/logo3.png"></img>
+            </div>
             <div id="historytxt">
-                <p class="descriH4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, acodio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos tempusurna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. </p>
+                <p class="descriH4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et
+                    velit interdum, acodio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                    per inceptos tempusurna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam,
+                    semper iaculis condimentum ac, vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu
+                    ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis
+                    condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac,
+                    vestibulum eu nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et
+                    velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia
+                    nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. </p>
             </div>
         </div>
     </div>
@@ -279,14 +290,48 @@
 
     <h1 class="titleH2"><b>Nossa </b>História</h1>
 
-    <div class="contact">
+    <div class="contact-container">
         <div class="location">
             <div class="localImg">
-                <a href="https://www.google.com/maps/place/HarmoniArt+N%C3%BAcleo+Ensino+Musical/@-23.6713899,-46.7424635,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce514edc42d995:0xe1f01202ffb09fe4!8m2!3d-23.6713586!4d-46.7403058" target="_blank" rel="noopener noreferrer"><img src="IMG/local.jpg"alt=""></a>
+                <a href="https://www.google.com/maps/place/HarmoniArt+N%C3%BAcleo+Ensino+Musical/@-23.6713899,-46.7424635,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce514edc42d995:0xe1f01202ffb09fe4!8m2!3d-23.6713586!4d-46.7403058"
+                    target="_blank" rel="noopener noreferrer"><img src="IMG/local.jpg" alt=""></a>
             </div>
             <div class="localInfo">
                 <p class="descriH4">Estrada do M'Boi Mirim, 771 - Jardim das Flores, São Paulo - SP, 04905-020</p>
                 <span class="material-icons">place</span>
+            </div>
+        </div>
+
+        <div class="contact">
+            <div class="contactInfo">
+                <div>
+                    <span class="material-icons">call</span>
+                    <p class="descriH4">+55 11 9999-9999</p>
+                </div>
+                <div>
+                    <span class="material-icons">email</span>
+                    <p class="descriH4">contato@harmoniart.com</p>
+                </div>
+                <div>
+                    <img src="IMG/facebook.png" alt="">
+                    <p class="descriH4">Harmoniart Núcleo Musical</p>
+                </div>
+                <div>
+                    <img src="IMG/whats.png" alt="">
+                    <p class="descriH4">+55 11 99999-9999</p>
+                </div>
+
+            </div>
+            <hr>
+            <div class="contactForm">
+                <form action="" method="post">
+                    <input type="text" name="" placeholder="Nome Completo" class="inputs">
+                    <input type="text" name="" placeholder="Email" class="inputs">
+                    <textarea name=" "placeholder="Escreva sua mensagem" class="inputs" cols="30" rows="10"></textarea>
+                    <div>
+                        <input type="submit" class="callToAction descriH5" value="Enviar Mensagem">
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -298,14 +343,14 @@
         <div id="linkFooter">
             <div id="logoFooter" class="log">
                 <img src="IMG/logo.png" alt="">
-                <h1 class="logoTXT  descriH3" >
+                <h1 class="logoTXT  descriH4" style="font-weight: bold;">
                     <nobr>HarmoniArt <b> Nucleo </nobr><br> de ensino </b>Musical
                 </h1>
             </div>
             <ul id="listafooter">
-                <li><a href="#">Contate-nos</a></li>
-                <li><a href="#">Estude com agente</a></li>
-                <li><a href="#">Cursos</a></li>
+                <li><a href="#" class="descriH5">Contate-nos</a></li>
+                <li><a href="#" class="descriH5">Estude com agente</a></li>
+                <li><a href="#" class="descriH5">Cursos</a></li>
             </ul>
 
         </div>
@@ -317,9 +362,23 @@
         </div>
 
     </footer>
-    <script src="JavaScript/carrossel.js"></script>
+
+    <div id="modalSubscribe" class="modal-container">
+        <div class="modal">
+            <input type="button" class="fechar" value="X">
+            <h6 class="titleH5">Inscreva-se para uma aula grátis</h6>
+            <input type="text" name="" id="" class="inputs descriH5" placeholder="Nome Completo:">
+            <input type="text" name="" id="" class="inputs descriH5" placeholder="Email:">
+            <div>
+                <input type="submit" value="Inscrever-se" class="callToAction">
+            </div>
+        </div>
+    </div>
+
+    <script src="JavaScript/carrossel.js">
 
     </script>
+
 </body>
 
 </html>

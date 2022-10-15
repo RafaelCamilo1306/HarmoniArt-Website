@@ -35,14 +35,8 @@ body {
     height: 100%;
     background-color: #131313;
 }
-
-hr {
+h1{
     position: relative;
-    margin-top: 6%;
-    background-color: var(--corGray700);
-    width: 90%;
-    left: 50%;
-    transform: translateX(-50%);
 }
 h4{
     color:var(--corPrimariaLight);

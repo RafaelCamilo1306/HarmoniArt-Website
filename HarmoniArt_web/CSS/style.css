@@ -80,7 +80,7 @@
 
     h1 {
         position: relative;
-        top: 5%;
+        margin: 4% 0;
         color: var(--corPrimariaMedium);
         text-align: center;
         text-transform: uppercase;
@@ -103,6 +103,7 @@
 
 
     #titleHero {
+        margin:0;
         top: 10%;
         position: absolute;
         padding: 0 0 0 5%;
@@ -120,7 +121,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 5%;
+        gap: 12%;
     }
 
     #headerSubButton .callToAction {
@@ -134,7 +135,7 @@
         width: 100%;
         justify-content: center;
         gap: 15%;
-        top: 2%;
+        margin:2% 0;
     }
     #atrativos div{
         text-align: center; 
@@ -146,7 +147,7 @@
         flex-wrap: wrap;
         width: 100%;
         height: 50%;
-        margin: 5% 0;
+        margin: 8% 0;
         justify-content: space-around;
     }
      .card h4 { 
@@ -284,11 +285,13 @@
 
     /* area de contato da página */
 
-    .contact{
-     position: relative;
-     margin: 4% 0;
-     width:100%;
-     height: 80%;
+    .contact-container{
+        position: relative;
+        width:100%;
+        margin: 4% 0 2% 0; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .location{
         display: flex;
@@ -307,6 +310,64 @@
         justify-content: flex-end;
         color: var(--corPrimariaLigth);
     }
+
+    .contact{
+        position: relative;
+        width: 90%;
+        height: 500px;
+        display: flex;
+        justify-content: space-between;
+        padding: 4%;
+        box-sizing: border-box;
+    }
+
+    .contact div{
+        display: flex;
+        width: 40%;
+    }
+    .contact hr{
+       color: var(--corGray700);
+    }
+    .contactInfo{
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5% 0;
+        box-sizing: border-box;
+    }
+    .contactInfo div{
+        width: 100%;
+        padding: 2% 8%;
+        box-sizing: border-box;
+        justify-content:space-between;
+        color: var(--corGray500);
+    }
+    .contactInfo p{
+        width: 80%;
+        text-align: left;
+    }
+    .contactInfo div img{
+        max-height: 20px;
+       max-width: 20px;
+    }
+
+    .contactForm{
+        padding: 0 2%;
+        box-sizing: border-box;
+    }
+
+    .contactForm form{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .contactForm form div{
+        width: 100%;
+        justify-content: flex-end;
+    }
     /*  area do footer */
 
     footer {
@@ -320,9 +381,8 @@
         padding: 2% 5%;
         box-sizing: border-box;
         background-color: var(--corPrimariaMedium);
-        top: 40%;
+        top: 16%;
     }
-
     #logoFooter {
         width: 30%;
         height: 100%;
@@ -340,7 +400,7 @@
     }
 
     #listafooter {
-        width: 40%;
+        width: 52%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -350,16 +410,6 @@
     #listafooter li {
         margin-left: 5%;
         align-items: center;
-    }
-
-    #listafooter li a {
-
-        font-size: 0.5em;
-    }
-
-    #hrfooter {
-        margin: 0;
-        width: 100%;
     }
 
     .redesFoot {
@@ -453,6 +503,7 @@
     .divPerfil div p {
         color: var(--corAuxiliarSucess);
     }
+    /* forms da parte superior da div que dividem spaços */
     .formsUp{
         display: flex;
         width: 100%;
