@@ -23,8 +23,8 @@
     width: 20%;
 }
 #History img{
-    width: 100%;
-    height: 100%;
+    width: 76%;
+    height: 42%;
     filter: drop-shadow(4px 4px 4px #fff);
 
 }
@@ -74,5 +74,9 @@
     }
     .redesFoot a img{
         width: 40%;
+    }
+    #History img{
+        width: 76%;
+        height: 90%;
     }
 }
