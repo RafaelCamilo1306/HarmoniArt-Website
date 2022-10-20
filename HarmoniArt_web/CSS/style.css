@@ -435,20 +435,25 @@
 
     /*--------------------Tela de Login------------------*/
     /* códigos referentes aos conteudos da tela de login */
+    #login-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .log a {
         justify-content: center;
     }
 
     #login {
-        width: 28vw;
-        height: 100%;
+        width: 48vw;
+        height: 60vh;
         display: flex;
-        box-sizing: border-box;
         flex-direction: column;
-        gap: 56px;
         justify-content: center;
         align-items: center;
-        z-index: 10;
+        background-color: var(--corPrimariaDark100);
+        z-index: 100;
+        gap: 56px;
     }
 
     #entrar {
@@ -524,6 +529,12 @@
         width: 100%;
         justify-content: space-between; 
         gap: 2%;
+    }
+    .formsUp form{
+        width: 40%;
+    }
+    .formsUp form div{
+        width: 100%;
     }
     .notesArea form {
         display: flex;
@@ -620,5 +631,14 @@
         }
         #divOurCourses{
             height: 56%;
+        }
+        #login-container{
+          justify-content: flex-start;  
+        }
+        #login{
+            margin: 0;
+            transform: translateX(0);
+            width: 28vw;
+            height: 100vh;
         }
     }

@@ -42,10 +42,11 @@
 }
 #fundoLogin{
     position: absolute;
-    height: 100vh;
-    width: 72vw;
-    left: 28vw;
+    height: 100%;
+    width: 100%;
     top:0;
+    z-index: 0;
+    filter: blur(8px);
 }
 .divPerfil img{
     width: 40%;
@@ -75,5 +76,11 @@
     #History img{
         width: 76%;
         height: 90%;
+    }
+    #fundoLogin{
+        left: 28vw;
+        width: 72%;
+        filter: blur(0px);
+
     }
 }
