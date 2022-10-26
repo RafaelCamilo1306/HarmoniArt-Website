@@ -68,15 +68,17 @@ subscribe.addEventListener('click', () => iniciaModal('modalSubscribe'));
 const botao= document.querySelector(".bnt-backTop");
 
 window.addEventListener("scroll", function (event){
+    console.log(window.scrollY);
     if(window.scrollY==0){
         botao.classList.remove("active");
-    }else if (window.scrollY!=0){
+    }else if (window.scrollY>=5000) {
+        botao.style.background="var(--corGray300)";
+    }else {
         botao.classList.add("active");
+            botao.addEventListener("click", function(event){
+                window.scrollTo(0, 0);
+            });
     }
 });
 
-if(botao.classList=="active"){
-    botao.addEventListener("click", function(event){
-        window.scrollTo(0, 0);
-    });
-}
+
