@@ -60,3 +60,23 @@ const subscribe = document.querySelector('#bntSubs');
     
 // evento de click para ativar a função;
 subscribe.addEventListener('click', () => iniciaModal('modalSubscribe'));
+
+
+
+// botão back to top ------------------------
+
+const botao= document.querySelector(".bnt-backTop");
+
+window.addEventListener("scroll", function (event){
+    if(window.scrollY==0){
+        botao.classList.remove("active");
+    }else if (window.scrollY!=0){
+        botao.classList.add("active");
+    }
+});
+
+if(botao.classList=="active"){
+    botao.addEventListener("click", function(event){
+        window.scrollTo(0, 0);
+    });
+}

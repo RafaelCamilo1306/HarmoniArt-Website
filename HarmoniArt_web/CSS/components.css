@@ -131,8 +131,33 @@
     cursor: pointer;
 }
 
+.bnt-backTop{
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--corPrimariaMedium);
+}
+.bnt-backTop.active{
+    display: flex;
+    animation: backTop .3s;
+}
 
-
+@keyframes backTop {
+    from{
+        opacity: 0;
+        bottom: -30;
+        right: -30;
+    }
+    to{
+        opacity: 1;
+        bottom: 30px;
+        right: 30px;
+    }
+}
 /*-- Area de perfil-- */
 
 .divPerfil {
@@ -156,6 +181,16 @@
     background-color: var(--corGray200);
     border: none;
     border-bottom: 1px solid #111111;
+}
+.bnt-backTop{
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--corPrimariaMedium);
 }
 
 
