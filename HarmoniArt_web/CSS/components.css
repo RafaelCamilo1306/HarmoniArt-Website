@@ -156,19 +156,16 @@
     cursor: pointer;
 }
 .bnt-backTop.active{
-    visibility: visible;   
+    visibility: visible; 
+    animation: backTop .3s;  
 }
 
 @keyframes backTop {
     from{
         opacity: 0;
-        bottom: -30;
-        right: -30;
     }
     to{
         opacity: 1;
-        bottom: 30px;
-        right: 30px;
     }
 }
 /*-- Area de perfil-- */
