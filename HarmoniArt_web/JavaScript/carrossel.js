@@ -68,7 +68,6 @@ subscribe.addEventListener('click', () => iniciaModal('modalSubscribe'));
 const botao= document.querySelector(".bnt-backTop");
 
 window.addEventListener("scroll", () => {
-    console.log(window.scrollY);
     if(window.scrollY==0){
         botao.classList.remove("active");
     }else if (window.scrollY < 4700) {

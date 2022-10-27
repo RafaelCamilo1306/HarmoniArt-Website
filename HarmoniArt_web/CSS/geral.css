@@ -1,18 +1,3 @@
-:root {
-    --corPrimariaLight: #F1F1F1;
-    --corPrimariaMedium: #FF9D02;
-    --corPrimariaDark100:#131313;
-    --corPrimariaDark68:rgb(0, 0, 0,.68);
-    --corPrimariaDark40:rgb(0, 0, 0,.40);
-    --corGray900: #2E2517;
-    --corGray700: #80786C;
-    --corGray600: #B2A898;
-    --corGray500: #CCC4B8;
-    --corGray300: #D9CCB8;
-    --corGray200: #E5DDCF;
-    --corGray100: #E5E1DA;
-}
-
 @font-face {
     font-family: Inter;
     src: url(../FONTE/Inter-Regular.ttf);
