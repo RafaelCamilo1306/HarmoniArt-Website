@@ -1,676 +1,704 @@
-    :root {
-        --corPrimariaLigth: #f1f1f1;
-        --corPrimariaMedium: #FF9D02;
-        --corPrimariaDark100: #131313;
-        --corPrimariaDark68: rgb(0, 0, 0, .68);
-        --corPrimariaDark40: rgb(0, 0, 0, .40);
-        --corGray900: #2E2517;
-        --corGray700: #80786C;
-        --corGray600: #B2A898;
-        --corGray500: #CCC4B8;
-        --corGray300: #D9CCB8;
-        --corGray200: #E5DDCF;
-        --corGray100: #E5E1DA;
-        --corAuxiliarDangerous: #FF0202;
-        --corAuxiliarAlert: #FFD702;
-        --corAuxiliarSucess: #2FE502;
-    }
+:root {
+    --corPrimariaLigth: #f1f1f1;
+    --corPrimariaMedium: #FF9D02;
+    --corPrimariaDark100: #131313;
+    --corPrimariaDark68: rgb(0, 0, 0, .68);
+    --corPrimariaDark40: rgb(0, 0, 0, .40);
+    --corGray900: #2E2517;
+    --corGray700: #80786C;
+    --corGray600: #B2A898;
+    --corGray500: #CCC4B8;
+    --corGray300: #D9CCB8;
+    --corGray200: #E5DDCF;
+    --corGray100: #E5E1DA;
+    --corAuxiliarDangerous: #FF0202;
+    --corAuxiliarAlert: #FFD702;
+    --corAuxiliarSucess: #2FE502;
+}
 
-    .areaLinha {
+.areaLinha {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 2%;
+    padding: 4% 0;
+    box-sizing: border-box;
+}
+
+.linha {
+    width: 90%;
+    height: 2px;
+    background-color: var(--corGray700);
+}
+
+/*  área com o contato e botão pra entrar na área exclusiva */
+#cabecario {
+    position: relative;
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #B2A898;
+    ;
+}
+
+#AreaExclusiva {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--corGray900);
+    padding: 1% 2% 1% 0;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.redes {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.redes a {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #131313;
+}
+
+/* inicio do corpo do site */
+header {
+    position: relative;
+    width: 100%;
+    height: 24%;
+    max-height: 500px;
+    box-shadow: inset 20px -40px 40px #000000;
+}
+
+h1 {
+    position: relative;
+    margin: 4% 0;
+    color: var(--corPrimariaMedium);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--corPrimariaMedium);
+    gap: 10px
+}
+
+b {
+    color: #fff;
+}
+
+
+#titleHero {
+    margin:0;
+    top: 10%;
+    position: absolute;
+    padding: 0 0 0 5%;
+    box-sizing: border-box;
+    text-align: left;
+    color: #FF9D02;
+    text-transform: none;
+}
+
+#headerSubButton {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12%;
+}
+
+#headerSubButton .callToAction {
+    width: 50%;
+}
+/* area dos atrativos */
+
+#atrativos{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin:8% 0;
+}
+#atrativos div{
+    text-align: center; 
+    color:var(--corPrimariaLigth);
+}
+#cards{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 4% 0;
+    justify-content: space-around;
+}
+    .card h4 { 
+    text-align: center;
+    color: var(--corPrimariaLigth);
+}    
+.card p{
+    color: var(--corPrimariaLigth);
+}
+/* area do cursos */
+#divOurCourses{
+    height: 26%;
+    margin: 4% 8%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#divOurCourses div {
+    display:flex;
+    width: 100%;
+    align-items: center;
+    color: var(--corPrimariaLigth);
+}
+#divOurCourses .course{
+    flex-direction: column;
+}
+
+/* area do vídeo */
+
+.video{
+    width: 100vw;
+    height: 630px;
+    padding: 0 10%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; 
+}
+
+/* area do carrossel */
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+    margin: 0 0 5% 0;
+}
+
+.conteiner {
+    position: relative;
+    margin: 8% 0 2% 50%;
+    transform: translate(-50%, 0);
+    height: 30%;
+    width: 80%;
+    overflow: hidden;
+    
+}
+
+.slide {
+    display: flex;
+    height: 100%;
+    width: 20%;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 15%;
+    transition: .6s;
+}
+
+.slide img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.descricao {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15%;
+    padding: 0 1% 1% 1%;
+    box-sizing: border-box;
+}
+
+.descricao p {
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #F1F1F1;
+    text-align: justify;
+}
+
+.navegation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.circle {
+    width: 1vw;
+    height: 0.8vh;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.circle:hover {
+    background-color: #FF9D02;
+    border-color: #FF9D02;
+}
+
+/* area "Nossa história" */
+
+#History{
+    width: 100%;
+    height: 36%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 4% 0;
+
+}
+#historyContent{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#historytxt{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: var(--corPrimariaLigth);
+    text-align: justify;
+}
+#historyimg{
+    width: 32%;
+    height: 36%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+
+}
+
+/* area de contato da página */
+
+.contact-container{
+    position: relative;
+    width:100%;
+    margin: 4% 0 2% 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.localImg{
+    width: 90%;
+}
+.localInfo{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--corPrimariaLigth);
+}
+
+.contact{
+    position: relative;
+    width: 90%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+    box-sizing: border-box;
+}
+
+.contact div{
+    display: flex;
+    width: 40%;
+}
+.contact hr{
+    color: var(--corGray700);
+}
+.contactInfo{
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 0;
+    box-sizing: border-box;
+}
+.contactInfo div{
+    width: 100%;
+    padding: 2% 8%;
+    box-sizing: border-box;
+    justify-content:space-between;
+    color: var(--corGray500);
+}
+.contactInfo p{
+    width: 80%;
+    text-align: left;
+}
+.contactForm{
+    padding: 0 2%;
+    box-sizing: border-box;
+}
+
+.contactForm form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contactForm form textarea{
+    resize: none;
+}
+.contactForm form div{
+    width: 100%;
+    justify-content: flex-end;
+}
+/*  area do footer */
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 36vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+    box-sizing: border-box;
+    background-color: var(--corPrimariaMedium);
+    top: 16%;
+}
+#logoFooter {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    gap:8%
+}
+
+#linkFooter {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #FF9D02;
+    flex-direction: column;
+}
+
+#listafooter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    list-style: none;
+    flex-direction: column;
+}
+
+#listafooter li {
+    margin-left: 5%;
+    align-items: center;
+}
+#footer-infoContact{
+    display: block;
+}
+#footer-infoContact ul li div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+}
+#abouv{
+    display: none;
+}
+#footer-infoContact ul {
+    list-style: none;
+
+}
+
+.redesFoot {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*--------------------Tela de Login------------------*/
+/* códigos referentes aos conteudos da tela de login */
+#login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.log a {
+    justify-content: center;
+}
+
+#login {
+    width: 48vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--corPrimariaDark100);
+    z-index: 100;
+    gap: 56px;
+}
+
+#entrar {
+    width: 80%;
+    height: 40%;
+    display: flex;
+    gap: 10%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#selecao {
+    display: flex;
+    gap: 4%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#entrar input[type=text] {
+    width: 85%;
+}
+
+#entrar label {
+    color: var(--corPrimariaMedium);
+}
+
+#logoLogin {
+    color: var(--corPrimariaMedium);
+}
+#recovery{
+    width: 100%;
+    padding: 2%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+}
+#recovery a{
+    color: var(--corGray700);
+
+}
+
+/* Area do iframe da parte exclusiva*/
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 80%;
+    height: 110%;
+    margin: 3% 0;
+    border: none;
+}
+
+.divPerfil div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.divPerfil div h3 {
+    align-self: flex-start;
+    color: #111111;
+}
+
+.divPerfil div p {
+    color: var(--corAuxiliarSucess);
+}
+/* forms da parte superior da div que dividem spaços */
+.formsUp{
+    display: flex;
+    width: 100%;
+    justify-content: space-between; 
+    gap: 2%;
+}
+.formsUp form{
+    width: 40%;
+}
+.formsUp form div{
+    width: 100%;
+}
+.notesArea form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px 24px; 
+    background: var(--corGray300);
+    border: 4px solid var(--corGray700);
+    border-radius: 16px;
+}
+.notesArea form div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.notesArea form h2{
+    width: 100%;
+}
+
+    /*--------------------Tela de Alteração de senha------------------*/
+    /* códigos referentes aos conteudos da tela de  Alteração de senha */
+
+    .recoverySenha{
         position: relative;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        top: 2%;
-        padding: 1% 0;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-60%);
+        width: 32%;
+        height: 50%;
+        padding: 40px;
         box-sizing: border-box;
+        background-color: var(--corGray900);
     }
-
-    .linha {
-        width: 90%;
-        height: 2px;
-        background-color: var(--corGray700);
-    }
-
-    /*  área com o contato e botão pra entrar na área exclusiva */
-    #cabecario {
-        position: relative;
-        height: 5vh;
+    .recoverySenha form{
+        width: 100%;
+        height: 100%;
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .recoverySenha form :nth-child(3){
+        flex-direction: row;
         justify-content: flex-end;
-        background-color: #B2A898;
-        ;
+    }
+    .recoverySenha div{
+        display: flex;
+        flex-direction: column;
+    }
+    .recoverySenha input[type=submit]{
+        width: 30%;
+    }
+    .recoverySenha label{
+        color: var(--corPrimariaLigth);
+    }
+
+/* responsividade */
+@media screen and (min-width: 768px) {
+    #cabecario {
+        height: 8vh;
     }
 
     #AreaExclusiva {
-        width: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        background-color: var(--corGray900);
-        padding: 1% 2% 1% 0;
-        box-sizing: border-box;
-        gap: 20px;
+        gap: 40px;
     }
 
     .redes {
-        width: 40%;
-        display: flex;
-        justify-content: space-between;
-
+        width: 30%;
     }
 
-    .redes a {
-        display: flex;
-        justify-content: center;
+    header{
+        height: 52%;
     }
-
-    a {
-        text-decoration: none;
-        color: #131313;
-    }
-
-    /* inicio do corpo do site */
-    header {
-        position: relative;
-        width: 100%;
-        height: 24%;
-        max-height: 500px;
-        box-shadow: inset 20px -40px 40px #000000;
-    }
-
-    h1 {
-        position: relative;
-        margin: 4% 0;
-        color: var(--corPrimariaMedium);
-        text-align: center;
-        text-transform: uppercase;
-    }
-
-    h3 {
-        font-weight: 600;
-        font-size: 3vw;
-        line-height: 150%;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: var(--corPrimariaMedium);
-        gap: 10px
-    }
-
-    b {
-        color: #fff;
-    }
-
-
-    #titleHero {
-        margin:0;
-        top: 10%;
-        position: absolute;
-        padding: 0 0 0 5%;
-        box-sizing: border-box;
-        text-align: left;
-        color: #FF9D02;
-        text-transform: none;
-    }
-
-    #headerSubButton {
-        position: absolute;
-        top: 50%;
-        left: 5%;
-        height: 35%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 12%;
-    }
-
-    #headerSubButton .callToAction {
-        width: 50%;
-    }
-    /* area dos atrativos */
-
     #atrativos{
-        position: relative;
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        gap: 15%;
-        margin:2% 0;
-    }
-    #atrativos div{
-        text-align: center; 
-        color:var(--corPrimariaLigth);
+        margin: 2% 0;
     }
     #cards{
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
         height: 44%;
-        margin: 4% 0;
-        justify-content: space-around;
     }
-     .card h4 { 
-        text-align: center;
-        color: var(--corPrimariaLigth);
-    }    
-    .card p{
-        color: var(--corPrimariaLigth);
-    }
-    /* area do cursos */
-    #divOurCourses{
-        height: 26%;
-        margin: 4% 8%;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    #divOurCourses div {
-        display:flex;
-        width: 100%;
-        align-items: center;
-        color: var(--corPrimariaLigth);
-    }
-    #divOurCourses .course{
-        flex-direction: column;
-    }
-
-    /* area do vídeo */
-
-    .video{
-       width: 100vw;
-       height: 630px;
-       padding: 0 10%;
-       box-sizing: border-box;
-       display: flex;
-       justify-content: center; 
-    }
-
-    /* area do carrossel */
-
-    .slides {
-        display: flex;
-        width: 500%;
-        height: 100%;
-        margin: 0 0 5% 0;
-    }
-    
     .conteiner {
-        position: relative;
-        margin: 8% 0 2% 50%;
-        transform: translate(-50%, 0);
-        height: 30%;
-        width: 80%;
-        overflow: hidden;
-        
-    }
-
-    .slide {
-        display: flex;
-        height: 100%;
-        width: 20%;
-        flex-direction: row;
-        align-items: center;
-        padding: 0px;
-        gap: 15%;
-        transition: .6s;
-    }
-
-    .slide img {
-        height: 90%;
-        width: 90%;
-        object-fit: cover;
-    }
-
-    .descricao {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0px;
-        gap: 15%;
-        padding: 0 1% 1% 1%;
-        box-sizing: border-box;
-    }
-
-    .descricao p {
-        font-weight: 400;
-        font-size: 1.5vw;
-        line-height: 150%;
-        display: flex;
-        align-items: center;
-        color: #F1F1F1;
-        text-align: justify;
-    }
-
-    .navegation {
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        transform: translate(-50%);
-        display: flex;
+        height: 75%;
     }
 
     .circle {
-        width: 1vw;
-        height: 0.8vh;
-        border: 2px solid #fff;
-        border-radius: 50%;
-        margin: 6px;
-        cursor: pointer;
-        transition: .4s;
+        width : 1.3vw;
+        height: 2vh;
     }
-
-    .circle:hover {
-        background-color: #FF9D02;
-        border-color: #FF9D02;
-    }
-
-    /* area "Nossa história" */
-
-    #History{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        position: relative;
-        margin: 4% 0;
-
-    }
-    #historyContent{
-        width: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    #history{
+        height: 52%;
     }
     #historytxt{
-        width: 60%;
-        color: var(--corPrimariaLigth);
+        display: flex;
+        flex-direction: row;
+    }
+    #historytxt p{
+        width: 72%;
+        margin-top: 4%;
     }
     #historyimg{
-        width: 40%;
-        height: 100%;
-        padding: 2%;
-        box-sizing: border-box;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 36%;
+        height: 100%;           
+        float: none;    
     }
-
-    /* area de contato da página */
-
-    .contact-container{
-        position: relative;
-        width:100%;
-        margin: 4% 0 2% 0; 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .location{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .localImg{
-        width: 90%;
-    }
-    .localInfo{
-        width: 90%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        color: var(--corPrimariaLigth);
-    }
-
-    .contact{
-        position: relative;
-        width: 90%;
-        height: 500px;
-        display: flex;
-        justify-content: space-between;
-        padding: 4%;
-        box-sizing: border-box;
-    }
-
-    .contact div{
-        display: flex;
-        width: 40%;
-    }
-    .contact hr{
-       color: var(--corGray700);
-    }
-    .contactInfo{
-        height: 100%;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding: 5% 0;
-        box-sizing: border-box;
-    }
-    .contactInfo div{
-        width: 100%;
-        padding: 2% 8%;
-        box-sizing: border-box;
-        justify-content:space-between;
-        color: var(--corGray500);
-    }
-    .contactInfo p{
-        width: 80%;
-        text-align: left;
-    }
-    .contactForm{
-        padding: 0 2%;
-        box-sizing: border-box;
-    }
-
-    .contactForm form{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .contactForm form div{
-        width: 100%;
-        justify-content: flex-end;
-    }
-    /*  area do footer */
-
     footer {
-        position: relative;
-        width: 100%;
-        height: 36vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2% 5%;
-        box-sizing: border-box;
-        background-color: var(--corPrimariaMedium);
-        top: 16%;
-    }
-    #logoFooter {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding-left: 20px;
-        gap:8%
+        height: 30%;
     }
 
-    #linkFooter {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        background-color: #FF9D02;
-        flex-direction: column;
+    #redesFoot {
+        width: 30vw;
     }
-
-    #listafooter {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items:flex-start;
-        list-style: none;
-        flex-direction: column;
-    }
-
-    #listafooter li {
-        margin-left: 5%;
+    #linkFooter{
         align-items: center;
+        flex-direction: row;
+    }
+    #listafooter{
+        align-items: center;
+        flex-direction: row;
+        width: 52%;
+    }
+
+    #listafooter li a {
+        font-size: 1.2vw;
     }
     #footer-infoContact{
-        display: block;
-    }
-    #footer-infoContact ul li div{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        margin-left: -10px;
-    }
-    #abouv{
         display: none;
     }
-    #footer-infoContact ul {
-        list-style: none;
-
-    }
-
-    .redesFoot {
-        width: 60%;
+    #abouv{
         display: flex;
-        justify-content: space-between;
     }
-
-    /*--------------------Tela de Login------------------*/
-    /* códigos referentes aos conteudos da tela de login */
+    #logoFooter{
+        width: 24%;
+    }
+    #divOurCourses{
+        height: 56%;
+    }
     #login-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;  
     }
-    .log a {
-        justify-content: center;
+    #login{
+        margin: 0;
+        transform: translateX(0);
+        width: 28vw;
+        height: 100vh;
     }
-
-    #login {
-        width: 48vw;
-        height: 60vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--corPrimariaDark100);
-        z-index: 100;
-        gap: 56px;
-    }
-
-    #entrar {
-        width: 80%;
-        height: 40%;
-        display: flex;
-        gap: 10%;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    #selecao {
-        display: flex;
-        gap: 4%;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    #entrar input[type=text] {
-        width: 85%;
-    }
-
-    #entrar label {
-        color: var(--corPrimariaMedium);
-    }
-
-    #logoLogin {
-        color: var(--corPrimariaMedium);
-    }
-    #recovery{
-        width: 100%;
-        padding: 2%;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: flex-end;
-    }
-    #recovery a{
-        color: var(--corGray700);
-
-    }
-
-    /* Area do iframe da parte exclusiva*/
-    .home-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-        width: 80%;
-        height: 110%;
-        margin: 3% 0;
-        border: none;
-    }
-
-    .divPerfil div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-    .divPerfil div h3 {
-        align-self: flex-start;
-        color: #111111;
-    }
-
-    .divPerfil div p {
-        color: var(--corAuxiliarSucess);
-    }
-    /* forms da parte superior da div que dividem spaços */
-    .formsUp{
-        display: flex;
-        width: 100%;
-        justify-content: space-between; 
-        gap: 2%;
-    }
-    .formsUp form{
-        width: 40%;
-    }
-    .formsUp form div{
-        width: 100%;
-    }
-    .notesArea form {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: space-between;
-        padding: 10px 24px; 
-        background: var(--corGray300);
-        border: 4px solid var(--corGray700);
-        border-radius: 16px;
-    }
-    .notesArea form div{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-    .notesArea form h2{
-        width: 100%;
-    }
-
-        /*--------------------Tela de Alteração de senha------------------*/
-        /* códigos referentes aos conteudos da tela de  Alteração de senha */
-
-        .recoverySenha{
-            position: relative;
-            top:50%;
-            left:50%;
-            transform: translate(-50%,-60%);
-            width: 32%;
-            height: 50%;
-            padding: 40px;
-            box-sizing: border-box;
-            background-color: var(--corGray900);
-        }
-        .recoverySenha form{
-            width: 100%;
-            height: 100%;
-           display: flex;
-           flex-direction: column;
-           justify-content: space-between;
-        }
-        .recoverySenha form :nth-child(3){
-            flex-direction: row;
-            justify-content: flex-end;
-        }
-        .recoverySenha div{
-            display: flex;
-            flex-direction: column;
-        }
-        .recoverySenha input[type=submit]{
-            width: 30%;
-        }
-        .recoverySenha label{
-            color: var(--corPrimariaLigth);
-        }
-
-    /* responsividade */
-    @media screen and (min-width: 768px) {
-        #cabecario {
-            height: 8vh;
-        }
-
-        #AreaExclusiva {
-            gap: 40px;
-        }
-
-        .redes {
-            width: 30%;
-        }
-
-        header{
-            height: 52%;
-        }
-        .conteiner {
-            height: 75%;
-        }
-
-        .circle {
-            width : 1.3vw;
-            height: 2vh;
-        }
-
-        footer {
-            height: 30%;
-        }
-
-        #redesFoot {
-            width: 30vw;
-        }
-        #linkFooter{
-            align-items: center;
-            flex-direction: row;
-        }
-        #listafooter{
-            align-items: center;
-            flex-direction: row;
-            width: 52%;
-        }
-
-        #listafooter li a {
-            font-size: 1.2vw;
-        }
-        #footer-infoContact{
-            display: none;
-        }
-        #abouv{
-            display: flex;
-        }
-        #logoFooter{
-            width: 24%;
-        }
-        #divOurCourses{
-            height: 56%;
-        }
-        #login-container{
-          justify-content: flex-start;  
-        }
-        #login{
-            margin: 0;
-            transform: translateX(0);
-            width: 28vw;
-            height: 100vh;
-        }
-    }
+}

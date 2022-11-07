@@ -22,11 +22,12 @@
 .features{
     width: 20%;
 }
-#History img{
-    width: 76%;
-    height: 42%;
-    filter: drop-shadow(4px 4px 4px #fff);
-
+#historyimg img{
+    width: 60%;
+    min-width: 64px;
+    min-height: 64px;
+    height: 84%;
+    filter: drop-shadow(2px 2px 2px #fff);
 }
 .redes img {
     width:30%;
@@ -79,10 +80,6 @@
     }
     .redesFoot a img{
         width: 40%;
-    }
-    #History img{
-        width: 76%;
-        height: 90%;
     }
     #fundoLogin{
         left: 28vw;
