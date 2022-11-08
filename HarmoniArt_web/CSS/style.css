@@ -74,8 +74,8 @@ a {
 header {
     position: relative;
     width: 100%;
-    height: 24%;
     max-height: 500px;
+    min-height:170px;
     box-shadow: inset 20px -40px 40px #000000;
 }
 
@@ -147,6 +147,7 @@ b {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    min-width:460px;
     margin: 4% 0;
     justify-content: space-around;
 }
@@ -180,11 +181,16 @@ b {
 
 .video{
     width: 100vw;
-    height: 630px;
+    height: auto;
     padding: 0 10%;
     box-sizing: border-box;
     display: flex;
     justify-content: center; 
+}
+.videoFrame{
+    height: 200px;
+    width: 800px; 
+
 }
 
 /* area do carrossel */
@@ -271,7 +277,7 @@ b {
 
 #History{
     width: 100%;
-    height: 36%;
+    height: 58%;
     display: flex;
     justify-content: center;
     position: relative;
@@ -279,7 +285,7 @@ b {
 
 }
 #historyContent{
-    width: 80%;
+    width: 92%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -333,8 +339,9 @@ b {
 .contact{
     position: relative;
     width: 90%;
-    height: 500px;
+    height: 700px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding: 4%;
     box-sizing: border-box;
@@ -342,16 +349,17 @@ b {
 
 .contact div{
     display: flex;
-    width: 40%;
 }
 .contact hr{
     color: var(--corGray700);
 }
 .contactInfo{
-    height: 100%;
+    height: 40%;
+    width: 100%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 16%;
     padding: 5% 0;
     box-sizing: border-box;
 }
@@ -367,6 +375,8 @@ b {
     text-align: left;
 }
 .contactForm{
+    width: 100%;
+    height: 50%;
     padding: 0 2%;
     box-sizing: border-box;
 }
@@ -390,7 +400,7 @@ b {
 footer {
     position: relative;
     width: 100%;
-    height: 36vh;
+    height: 44%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -636,6 +646,10 @@ footer {
     #cards{
         height: 44%;
     }
+    .videoFrame{
+        height: 610px;
+        width: 1120px;
+    }
     .conteiner {
         height: 75%;
     }
@@ -644,8 +658,11 @@ footer {
         width : 1.3vw;
         height: 2vh;
     }
-    #history{
-        height: 52%;
+    #History{
+        height: 44%;
+    }
+    #historyContent{
+        width: 80%;
     }
     #historytxt{
         display: flex;
@@ -653,7 +670,6 @@ footer {
     }
     #historytxt p{
         width: 72%;
-        margin-top: 4%;
     }
     #historyimg{
         width: 36%;
@@ -661,7 +677,7 @@ footer {
         float: none;    
     }
     footer {
-        height: 30%;
+        height: 40%;
     }
 
     #redesFoot {
@@ -679,6 +695,18 @@ footer {
 
     #listafooter li a {
         font-size: 1.2vw;
+    }
+    .contact{
+        height: 500px;
+        flex-direction: row;
+    }
+    .contactInfo{
+        height: 100%;
+        width: 40%;
+    }
+    .contactForm{
+        height: 100%;
+        width: 50%;
     }
     #footer-infoContact{
         display: none;
