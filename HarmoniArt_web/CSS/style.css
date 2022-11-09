@@ -116,9 +116,9 @@ b {
 
 #headerSubButton {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 5%;
-    height: 35%;
+    height: 28%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -147,9 +147,9 @@ b {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    min-width:460px;
+    min-width:360px;
     margin: 4% 0;
-    justify-content: space-around;
+     justify-content: space-around;
 }
     .card h4 { 
     text-align: center;
@@ -170,11 +170,15 @@ b {
 #divOurCourses div {
     display:flex;
     width: 100%;
+    justify-content: center;
     align-items: center;
     color: var(--corPrimariaLigth);
 }
 #divOurCourses .course{
     flex-direction: column;
+}
+.course h5, .course p{
+    text-align: center;
 }
 
 /* area do vídeo */
@@ -223,12 +227,6 @@ b {
     transition: .6s;
 }
 
-.slide img {
-    height: 90%;
-    width: 90%;
-    object-fit: cover;
-}
-
 .descricao {
     height: 100%;
     display: flex;
@@ -242,7 +240,7 @@ b {
 
 .descricao p {
     font-weight: 400;
-    font-size: 1.5vw;
+    font-size: 2.2vw;
     line-height: 150%;
     display: flex;
     align-items: center;
@@ -252,15 +250,15 @@ b {
 
 .navegation {
     position: absolute;
-    bottom: 20px;
+    bottom: -6px;
     left: 50%;
     transform: translate(-50%);
     display: flex;
 }
 
 .circle {
-    width: 1vw;
-    height: 0.8vh;
+    width: 8px;
+    height: 8px;
     border: 2px solid #fff;
     border-radius: 50%;
     margin: 6px;
@@ -277,7 +275,7 @@ b {
 
 #History{
     width: 100%;
-    height: 58%;
+    height: auto;
     display: flex;
     justify-content: center;
     position: relative;
@@ -293,14 +291,11 @@ b {
 #historytxt{
     display: block;
     width: 100%;
-    height: 100%;
     color: var(--corPrimariaLigth);
     text-align: justify;
 }
 #historyimg{
-    width: 32%;
-    height: 36%;
-    box-sizing: border-box;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -476,7 +471,7 @@ footer {
 }
 
 #login {
-    width: 48vw;
+    width: 100%;
     height: 60vh;
     display: flex;
     flex-direction: column;
@@ -625,6 +620,9 @@ footer {
 
 /* responsividade */
 @media screen and (min-width: 768px) {
+    .areaLinha{
+        padding: 2% 0;
+    }
     #cabecario {
         height: 8vh;
     }
@@ -653,10 +651,16 @@ footer {
     .conteiner {
         height: 75%;
     }
+    .descricao p{
+        font-size: 1.5vw;
+    }
+    .navegation{
+        bottom: 20px;
+    }
 
     .circle {
-        width : 1.3vw;
-        height: 2vh;
+        width : 16px;
+        height: 16px;
     }
     #History{
         height: 44%;
@@ -673,7 +677,6 @@ footer {
     }
     #historyimg{
         width: 36%;
-        height: 100%;           
         float: none;    
     }
     footer {
