@@ -18,7 +18,7 @@
 
 /* design de botão secundário*/
 .botaoSec {
-    width: 10vw;
+    width: 32%;
     padding: 1% 12%;
     box-sizing: border-box;
     display: flex;
@@ -27,8 +27,6 @@
     color: #B2A898;
     border: 1px solid #B2A898;
     border-radius: 16px;
-    font-weight: 700;
-    font-size: 1.4vw;
 }
 
 /* design botão terciário */
@@ -39,8 +37,6 @@
     background: var(--corPrimariaDark100);
     color: var(--corGray500);
     border-radius: 16px;
-    font-weight: 400;
-    font-size: 1.5vw;
     cursor: pointer;
 }
 
@@ -207,8 +203,7 @@
 .card {
     padding: 32px 24px;
     gap: 10px;
-    width: 20%;
-    min-width: 180px;
+    width: 36%;
     max-height: 80px;
     overflow-y: hidden;
     height:100%;
@@ -289,10 +284,13 @@
         padding: 8px 32px;
     }
     .botaoSec {
+        width: 16%;
         padding: 8px 100px;
         box-sizing: border-box;
     }
     .card{
+        width: 20%;
+        min-width: 180px;
         max-height:500px ;
     }
 }
