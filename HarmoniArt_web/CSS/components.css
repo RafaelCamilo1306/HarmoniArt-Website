@@ -98,7 +98,7 @@
     padding: 52px 24px;
     box-sizing: border-box;
     height: 44%;
-    width: 30%;
+    width: 70%;
     color: var(--corPrimariaLigth);
     display: flex;
     flex-direction: column;
@@ -168,14 +168,17 @@
 
 .divPerfil {
     margin: 3% 0 3% 2%;
-    width: 32%;
+    width: 64%;
     height: 100%;
+    max-height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 12px 10px;
     box-sizing: border-box;
-    justify-content: space-between;
+    overflow-y: hidden;
+    gap: 10%;
+    justify-content: none;
     background: var(--corGray200);
     /* $Color/Gray/700 */
     border: 4px solid var(--corGray700);
@@ -292,5 +295,15 @@
         width: 20%;
         min-width: 180px;
         max-height:500px ;
+    }
+    .modal{
+        width: 36%;
+    }
+    .divPerfil{
+        width:32% ;
+        height: 100%;
+        gap: 0;
+        justify-content: space-between;
+        max-height: none;
     }
 }

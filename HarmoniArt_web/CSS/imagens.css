@@ -55,8 +55,8 @@
     filter: blur(8px);
 }
 .divPerfil img{
-    width: 40%;
-    height: 25%;
+    width: 32%;
+    height: 28%;
 }
 .location img{
     width: 100%;
@@ -89,6 +89,10 @@
     }
     .redesFoot a img{
         width: 40%;
+    }
+    .divPerfil img{
+        width: 44%;
+        height: 28%;
     }
     #fundoLogin{
         left: 28vw;
