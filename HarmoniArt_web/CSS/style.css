@@ -170,11 +170,15 @@ b {
 #divOurCourses div {
     display:flex;
     width: 100%;
+    justify-content: center;
     align-items: center;
     color: var(--corPrimariaLigth);
 }
 #divOurCourses .course{
     flex-direction: column;
+}
+.course h5{
+    text-align: center;
 }
 
 /* area do vídeo */
@@ -223,12 +227,6 @@ b {
     transition: .6s;
 }
 
-.slide img {
-    height: 90%;
-    width: 90%;
-    object-fit: cover;
-}
-
 .descricao {
     height: 100%;
     display: flex;
@@ -252,15 +250,15 @@ b {
 
 .navegation {
     position: absolute;
-    bottom: 20px;
+    bottom: -6px;
     left: 50%;
     transform: translate(-50%);
     display: flex;
 }
 
 .circle {
-    width: 1vw;
-    height: 0.8vh;
+    width: 8px;
+    height: 8px;
     border: 2px solid #fff;
     border-radius: 50%;
     margin: 6px;
@@ -298,8 +296,8 @@ b {
     text-align: justify;
 }
 #historyimg{
-    width: 32%;
-    height: 36%;
+    width: 40%;
+    height: 20%;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -625,6 +623,9 @@ footer {
 
 /* responsividade */
 @media screen and (min-width: 768px) {
+    .areaLinha{
+        padding: 2% 0;
+    }
     #cabecario {
         height: 8vh;
     }
@@ -653,10 +654,13 @@ footer {
     .conteiner {
         height: 75%;
     }
+    .navegation{
+        bottom: 20px;
+    }
 
     .circle {
-        width : 1.3vw;
-        height: 2vh;
+        width : 16px;
+        height: 16px;
     }
     #History{
         height: 44%;
