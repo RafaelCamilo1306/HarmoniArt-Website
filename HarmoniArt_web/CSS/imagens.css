@@ -56,8 +56,8 @@
 }
 .divPerfil img{
     width: 32%;
-    height: 28%;
 }
+
 .location img{
     width: 100%;
     height: 100%;
@@ -92,7 +92,6 @@
     }
     .divPerfil img{
         width: 44%;
-        height: 28%;
     }
     #fundoLogin{
         left: 28vw;

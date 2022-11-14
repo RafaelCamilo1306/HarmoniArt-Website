@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="../../CSS/imagens.css" type="text/css">
     <link rel="stylesheet" href="../../CSS/components.css" type="text/css">
     <link rel="stylesheet" href="../../CSS/tipografia.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
-<body onload="statusOnload()">
+<body>
     <nav>
         <div class="divLogo">
             <a href="../../index.html">
@@ -40,78 +42,41 @@
     </nav>
     <div class="homeConteiner">
         <div class="divPerfil">
-            <h2 class="descriH5" style="font-weight: 500;">Indentificação do Professor</h2>
-            <img src="../../IMG/perfil.png" alt="">
-            <input type="submit" value="Alterar imagem" class="callToAction descriH5">
-            <div>
-                <h3 class="descriH5">Nome:</h3>
-                <input type="text" name="nome" class="exibir">
+            <div class="perfilContent">
+                <h2 class="descriH5" style="font-weight: 500;">Indentificação do Professor</h2>
+                <img src="../../IMG/perfil.png" id="imgUser">
+                <input type="submit" value="Alterar imagem" class="callToAction descriH5">
+                <div>
+                    <h3 class="descriH5">Nome:</h3>
+                    <input type="text" name="nome" class="exibir">
+                </div>
+                <div>
+                    <h3 class="descriH5">RM:</h3>
+                    <input type="text" name="nome" class="exibir">
+                </div>
+                <div style="flex-direction: column;">
+                    <h3 class="descriH5">Especialidade:</h3>
+                    <select class="dropDown descriH5">
+                        <option value="violao">violão</option>
+                        <option value="violino">violino</option>
+                        <option value="bateria">bateria</option>
+                    </select>
+                </div>
+                <div>
+                    <h3 class="descriH5">Endereço:</h3>
+                    <input type="text" name="nome" class="exibir">
+                </div>
             </div>
-            <div>
-                <h3 class="descriH5">RM:</h3>
-                <input type="text" name="nome" class="exibir">
-            </div>
-            <div style="flex-direction: column;">
-                <h3 class="descriH5">Especialidade:</h3>
-                <select class="dropDown descriH5">
-                    <option value="violao">violão</option>
-                    <option value="violino">violino</option>
-                    <option value="bateria">bateria</option>
-                </select>
-            </div>
-            <div>
-                <h3 class="descriH5">Endereço:</h3>
-                <input type="text" name="nome" class="exibir">
+            <div class="expand">
+                <span class="material-icons md-36" id="seta">
+                    expand_more
+                </span>
             </div>
         </div>
 
         <iframe src="boasVindas.html" name="iframeAluno" class="home-content"></iframe>
     </div>
     <script>
-
-        function statusOnload(){
-            let statusPg = document.querySelector('#statusPg');
-            let payment = document.querySelector('#botaoPg');
-            let statusMt = document.querySelector('#statusMt');
-            let matricula = document.querySelector('#botaoMt');
-            if (payment.checked) {
-                statusPg.textContent = "Pendente";
-                statusPg    .style.color = "var(--corAuxiliarDangerous)"  
-            }
-            
-            if (matricula.checked) {
-                statusMt.textContent = "Pendente";
-                statusMt.style.color = "var(--corAuxiliarDangerous)"  
-            }
-
-        }
-
-        function pagSituation() {
-
-            let status = document.querySelector('#statusPg');
-            console.log(status.textContent);
-            if (status.textContent === "Pago") {
-                status.textContent = "Pendente";
-                status.style.color = "var(--corAuxiliarDangerous)"  
-
-            } else {
-                status.textContent = "Pago";
-                status.style.color = "var(--corAuxiliarSucess)" 
-
-            }
-        }   
-        function matSituation() {
-
-            let status = document.querySelector('#statusMt');
-            console.log(status.textContent);
-            if (status.textContent === "Ativo") {
-                status.textContent = "Inativo";
-                status.style.color = "var(--corAuxiliarDangerous)"  
-            } else {
-                status.textContent = "Ativo";
-                status.style.color = "var(--corAuxiliarSucess)" 
-            }
-        }
         const burguer = document.querySelector(".mobile-menu");
         const navmenu = document.querySelector(".sections");
 
@@ -120,9 +85,31 @@
             burguer.classList.toggle('active')
             navmenu.classList.toggle('active')
         })
+
+        // função pra expandir e retrair o div perfil 
+
+        const expand_bnt = document.querySelector(".expand");
+        const perfil = document.querySelector(".divPerfil");
+        const imgPerfil = document.querySelector("#imgUser");
+        const bntContent = document.querySelector("#seta");
+        let count;
+
+        expand_bnt.addEventListener("click", () => {
+            if (count == 1) {
+                perfil.classList.remove("active");
+                bntContent.textContent = "expand_more";
+                count = 0;
+            } else {
+                perfil.classList.add("active");
+                bntContent.textContent = "expand_less"
+                count = 1;
+            }
+        });
+
+
     </script>
 
     <!-- <script src="../../JavaScript/carrossel.js"></script> -->
 </body>
 
-</html> 
+</html>

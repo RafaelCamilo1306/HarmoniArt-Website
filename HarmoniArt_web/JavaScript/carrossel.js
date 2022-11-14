@@ -38,7 +38,11 @@ burguer.addEventListener("click", () => {
     navmenu.classList.toggle('active')
 });
 
-// Function para a criação do pop-up
+let subscribe = document.querySelector('#bntSubs');
+
+// evento de click para ativar a função;
+subscribe.addEventListener('click', () => iniciaModal('modalSubscribe'));
+
 function iniciaModal(modalID) {
     const modal = document.getElementById(modalID);
     if (modal == document.getElementById(modalID)) {
@@ -55,11 +59,6 @@ function iniciaModal(modalID) {
     }
 }
 
-// variavel que armazena o botão 
-const subscribe = document.querySelector('#bntSubs');
-
-// evento de click para ativar a função;
-subscribe.addEventListener('click', () => iniciaModal('modalSubscribe'));
 
 
 

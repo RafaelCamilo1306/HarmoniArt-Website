@@ -29,7 +29,11 @@ nav {
 }
 
 .sections li {
+    display: flex;
     align-items: center;
+}
+.sections li a{
+    text-align: center;
 }
 /* area do menu*/
 
