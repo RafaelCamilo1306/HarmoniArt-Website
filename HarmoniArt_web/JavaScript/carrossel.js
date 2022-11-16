@@ -22,7 +22,7 @@ function actualizeLabelColor(labelId) {
         s1.style.marginLeft = "-80%";
     }
 }
-const defaultLabel = document.getElementById("label1");
+let defaultLabel = document.querySelector("#label1");
 defaultLabel.style.background = "#FF9D02";
 defaultLabel.style.borderColor = "#FF9D02";
 

@@ -25,7 +25,7 @@ h1{
     position: relative;
 }
 h4{
-    color:var(--corPrimariaLight);
+    color:var(--corPrimariaLigth);
 }
 .subtitle {
     font-weight: 400;
