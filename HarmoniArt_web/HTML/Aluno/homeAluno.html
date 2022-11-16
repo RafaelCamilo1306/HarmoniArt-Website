@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="../../CSS/tipografia.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <script src="../../JavaScript/menu.js" defer></script>
+    <script src="../../JavaScript/popUp.js" defer></script>
+    <script src="../../JavaScript/statusCad.js" defer></script>
+    <script src="../../JavaScript/botaoExpand.js" defer></script>
 </head>
 
 <body onload="statusOnload()">
@@ -94,80 +98,7 @@
 
         <iframe src="lembretes.html" name="iframeAluno" class="home-content"></iframe>
     </div>
-    <script>
-
-        function statusOnload() {
-            let statusPg = document.querySelector('#statusPg');
-            let payment = document.querySelector('#botaoPg');
-            let statusMt = document.querySelector('#statusMt');
-            let matricula = document.querySelector('#botaoMt');
-            if (payment.checked) {
-                statusPg.textContent = "Pendente";
-                statusPg.style.color = "var(--corAuxiliarDangerous)"
-            }
-
-            if (matricula.checked) {
-                statusMt.textContent = "Pendente";
-                statusMt.style.color = "var(--corAuxiliarDangerous)"
-            }
-
-        }
-
-        function pagSituation() {
-
-            let status = document.querySelector('#statusPg');
-            console.log(status.textContent);
-            if (status.textContent === "Pago") {
-                status.textContent = "Pendente";
-                status.style.color = "var(--corAuxiliarDangerous)"
-
-            } else {
-                status.textContent = "Pago";
-                status.style.color = "var(--corAuxiliarSucess)"
-
-            }
-        }
-        function matSituation() {
-
-            let status = document.querySelector('#statusMt');
-            console.log(status.textContent);
-            if (status.textContent === "Ativo") {
-                status.textContent = "Inativo";
-                status.style.color = "var(--corAuxiliarDangerous)"
-            } else {
-                status.textContent = "Ativo";
-                status.style.color = "var(--corAuxiliarSucess)"
-            }
-        }
-        const burguer = document.querySelector(".mobile-menu");
-        const navmenu = document.querySelector(".sections");
-
-        burguer.addEventListener("click", () => {
-
-            burguer.classList.toggle('active')
-            navmenu.classList.toggle('active')
-        })
-        
-        const expand_bnt = document.querySelector(".expand");
-        const perfil = document.querySelector(".divPerfil");
-        const imgPerfil = document.querySelector("#imgUser");
-        const bntContent = document.querySelector("#seta");
-        let count;
-
-        expand_bnt.addEventListener("click", () => {
-            if (count == 1) {
-                perfil.classList.remove("active");
-                bntContent.textContent = "expand_more";
-                count = 0;
-            } else {
-                perfil.classList.add("active");
-                bntContent.textContent = "expand_less"
-                count = 1;
-            }
-        });
-    </script>
-
-    <!-- <script src="../../JavaScript/carrossel.js"></script> -->
+    
 </body>
 
 </html>

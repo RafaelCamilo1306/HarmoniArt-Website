@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="../../CSS/components.css" type="text/css">
     <link rel="stylesheet" href="../../CSS/tipografia.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    
+    <script src="../../JavaScript/menu.js" defer></script>
+    <script src="../../JavaScript/botaoExpand.js" defer></script>
+    <script src="../../JavaScript/popUp.js" defer></script>
 </head>
 
 <body>
@@ -76,38 +79,6 @@
 
         <iframe src="boasVindas.html" name="iframeAluno" class="home-content"></iframe>
     </div>
-    <script>
-        const burguer = document.querySelector(".mobile-menu");
-        const navmenu = document.querySelector(".sections");
-
-        burguer.addEventListener("click", () => {
-
-            burguer.classList.toggle('active')
-            navmenu.classList.toggle('active')
-        })
-
-        // função pra expandir e retrair o div perfil 
-
-        const expand_bnt = document.querySelector(".expand");
-        const perfil = document.querySelector(".divPerfil");
-        const imgPerfil = document.querySelector("#imgUser");
-        const bntContent = document.querySelector("#seta");
-        let count;
-
-        expand_bnt.addEventListener("click", () => {
-            if (count == 1) {
-                perfil.classList.remove("active");
-                bntContent.textContent = "expand_more";
-                count = 0;
-            } else {
-                perfil.classList.add("active");
-                bntContent.textContent = "expand_less"
-                count = 1;
-            }
-        });
-
-
-    </script>
 
     <!-- <script src="../../JavaScript/carrossel.js"></script> -->
 </body>
