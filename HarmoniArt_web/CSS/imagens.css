@@ -28,10 +28,11 @@
     object-fit: cover;
 }
 #historyimg img{
-    width: 40%;
+    width: 52%;
     min-width: 64px;
     min-height: 64px;
     height: 100%;
+    max-height: 200px;
     filter: drop-shadow(2px 2px 2px #fff);
 }
 .redes img {

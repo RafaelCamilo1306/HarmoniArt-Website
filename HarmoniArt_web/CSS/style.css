@@ -498,7 +498,7 @@ footer {
     align-items: center;
 }
 
-#entrar input[type=text] {
+#entrar input[type=text], input[type=password] {
     width: 85%;
 }
 
@@ -530,7 +530,7 @@ footer {
     box-sizing: border-box;
     width: 80%;
     height: 100%;
-    margin: 3% 0;
+    margin: 3% 2%;
     border: none;
 }
 
@@ -547,7 +547,7 @@ footer {
 }
 
 .perfilContent div p {
-    color: var(--corAuxiliarSucess);
+    color: var(--corAuxiliarDangerous);
 }
 /* forms da parte superior da div que dividem spaços */
 .formsUp{

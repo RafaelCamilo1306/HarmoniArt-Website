@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Àrea exclusiva-Aluno</title>
+    <title>Área exclusiva-Aluno</title>
     <link rel="stylesheet" href="../../CSS/style.css" type="text/css">
     <link rel="stylesheet" href="../../CSS/nav.css" type="text/css">
     <link rel="stylesheet" href="../../CSS/geral.css" type="text/css">
@@ -52,11 +52,11 @@
                 <input type="submit" value="Alterar imagem" class="callToAction descriH5">
                 <div>
                     <h3 class="descriH5">Nome:</h3>
-                    <input type="text" name="nome" class="exibir">
+                    <input type="text" name="nome" class="exibir" readonly>
                 </div>
                 <div>
                     <h3 class="descriH5">RM:</h3>
-                    <input type="text" name="nome" class="exibir">
+                    <input type="text" name="nome" class="exibir" readonly>
                 </div>
                 <div style="flex-direction: column;">
                     <h3 class="descriH5">Cursando:</h3>
@@ -68,7 +68,7 @@
                 </div>
                 <div>
                     <h3 class="descriH5">Situação de matricula:</h3>
-                    <p id="statusMt" class="descriH5">Ativo</p>
+                    <p id="statusMt" class="descriH5">Inativo</p>
                     <label class="switch">
                         <input type="checkbox" id="botaoMt" onclick="matSituation()">
                         <span class="toggle round"></span>
@@ -76,9 +76,9 @@
                 </div>
                 <div>
                     <h3 class="descriH5">Situação de pagamento:</h3>
-                    <p id="statusPg" class="descriH5">Pago</p>
+                    <p id="statusPg" class="descriH5">Pendente</p>
                     <label class="switch">
-                        <input type="checkbox" id="botaoPg" onclick="pagSituation()" checked>
+                        <input type="checkbox" id="botaoPg" onclick="pagSituation()">
                         <span class="toggle round"></span>
                     </label>
                 </div>
@@ -86,7 +86,15 @@
                     <h3 class="descriH5">
                         <nobr>Ano de inicio:</nobr>
                     </h3>
-                    <input type="date" name="nome" class="exibir">
+                    <input type="date" name="nome" class="exibir" readonly>
+                </div>
+                <div>
+                    <h3 class="descriH5">Naturalidade:</h3>
+                    <input type="text" name="nome" class="exibir" readonly>
+                </div>
+                <div>
+                    <h3 class="descriH5">Nacionalidade:</h3>
+                    <input type="text" name="nome" class="exibir" readonly>
                 </div>
             </div>
                     <div class="expand">
