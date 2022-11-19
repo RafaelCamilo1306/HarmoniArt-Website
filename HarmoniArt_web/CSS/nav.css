@@ -27,6 +27,9 @@ nav {
     list-style: none;
     justify-content: space-between;
 }
+.sections.recuPass{
+    justify-content: flex-end;
+}
 
 .sections li {
     display: flex;
@@ -97,5 +100,12 @@ nav {
     }
     .log .logoTXT{
         display: block;
+    }
+    .sections.recuPass{
+        justify-content: flex-start;
+    }
+    .sections.recuPass li{
+       padding: 36% 0 0 0 ;
+       box-sizing: border-box;
     }
 }

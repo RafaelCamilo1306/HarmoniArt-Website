@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" onreset="growIframe()">
 
 <head>
     <meta charset="UTF-8">
@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="../../CSS/imagens.css" type="text/css">
     <link rel="stylesheet" href="../../CSS/components.css" type="text/css">
     <link rel="stylesheet" href="../../CSS/tipografia.css" type="text/css">
+    <link rel="icon" type="imagem/png" href="../../IMG/logo.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     <script src="../../JavaScript/menu.js" defer></script>
     <script src="../../JavaScript/botaoExpand.js" defer></script>
     <script src="../../JavaScript/popUp.js" defer></script>
+    <script src="../../JavaScript/growFrame.js" defer></script>
 </head>
 
 <body>
@@ -36,9 +38,9 @@
         </div>
 
         <ul class="sections" id="lista">
-            <li><a href="boasVindas.html" class="descriH4" target="iframeAluno">Home</a></li>
-            <li><a href="DadosProf.html" class="descriH4" target="iframeAluno">Dados Pessoais</a></li>
-            <li><a href="#" class="descriH4" target="iframeAluno">Horários</a></li>
+            <li><a href="boasVindas.html" class="descriH4" target="iframeAluno" onclick="growIframe('home')">Home</a></li>
+            <li><a href="DadosProf.html" class="descriH4" target="iframeAluno" onclick="growIframe('dados')">Dados Pessoais</a></li>
+            <li><a href="#" class="descriH4" target="iframeAluno"onclick="growIframe('agenda')">Horários</a></li>
             <li><a href="../login.html" class="descriH4">Sair</a></li>
         </ul>
 
