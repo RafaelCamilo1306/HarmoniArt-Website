@@ -13,12 +13,32 @@
     <link rel="stylesheet" href="../../CSS/tipografia.css" type="text/css">
     <link rel="stylesheet" href="../../CSS/iframes.css" type="text/css">
     <link rel="icon" type="imagem/png" href="../../IMG/logo.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
 <body>
     <h4 class="descriH3">Lembretes</h4>
     <div class="notesArea">
+
+        <div class="lembrete">
+            <div class="text">
+                <p class="msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum
+                    est a, mattis tellus. Sed dignissim, metus nec</p>
+                <p class="date">Enviado por Prof Saulo em: YYYY/MM/DD</p>
+            </div>
+            <div class="delete">
+                <span class="material-icons">delete</span>
+            </div>
+        </div>
+
+        <div class="lembrete new">
+            <div class="insert">
+                <textarea name="conteudo" class="inputs" cols="144" maxlength="144" rows="4"></textarea>
+                <label for="conteudo" class="descriH5">Enviar Mensagem (Max: 144 Caracteres).</label>
+            </div>
+            <input type="submit" value="Enviar" class="callToAction">
+        </div>
         <div class="note">
             <p class="descriH5">NÃO HÁ NOVOS LEMBRETES</p>
         </div>

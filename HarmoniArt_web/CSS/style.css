@@ -574,54 +574,57 @@ footer {
     align-items: flex-start;
     justify-content: center;
     width: 100%;
+    margin:4% 0;
 }
 .notesArea form h2{
     width: 100%;
 }
 
-    /*--------------------Tela de Alteração de senha------------------*/
-    /* códigos referentes aos conteudos da tela de  Alteração de senha */
+/*--------------------Tela de Alteração de senha------------------*/
+/* códigos referentes aos conteudos da tela de  Alteração de senha */
 
-    .recoverySenha{
-        position: relative;
-        top:50%;
-        left:50%;
-        transform: translate(-50%,-60%);
-        width: 340px;
-        height: 280px;
-        padding: 40px;
-        box-sizing: border-box;
-        background-color: var(--corGray900);
-    }
-    .recoverySenha form{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .recoverySenha form :nth-child(3){
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    .recoverySenha div{
-        display: flex;
-        flex-direction: column;
-    }
-    .recoverySenha input[type=submit]{
-        width: 30%;
-    }
-    .recoverySenha label{
-        color: var(--corPrimariaLigth);
-    }
+.recoverySenha{
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-60%);
+    width: 340px;
+    height: 280px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: var(--corGray900);
+}
+.recoverySenha form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.recoverySenha form :nth-child(3){
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.recoverySenha div{
+    display: flex;
+    flex-direction: column;
+}
+.recoverySenha input[type=submit]{
+    width: 30%;
+}
+.recoverySenha label{
+    color: var(--corPrimariaLigth);
+}
 
-    .homeConteiner{
-        display: flex; 
-        flex-direction: column;
-        width:100%;
-        height: 100%;
-        align-items: center;
-    }
+.homeConteiner{
+    display: flex; 
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+    align-items: center;
+    padding: 0 1%;
+    box-sizing: border-box;
+}
 
 /* responsividade */
 @media screen and (min-width: 768px) {
@@ -757,5 +760,6 @@ footer {
     .notesArea form div{
         align-items: center;
         flex-direction: row;
+        margin: 1% 0;
     }
 }

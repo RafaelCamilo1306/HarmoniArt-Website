@@ -17,6 +17,7 @@
     <script src="../../JavaScript/menu.js" defer></script>
     <script src="../../JavaScript/popUp.js" defer></script>
     <script src="../../JavaScript/statusCad.js" defer></script>
+    <script src="../../JavaScript/growFrame.js" defer></script>
     <script src="../../JavaScript/botaoExpand.js" defer></script>
 </head>
 
@@ -38,9 +39,9 @@
         </div>
 
         <ul class="sections" id="lista">
-            <li><a href="lembretes.html" class="descriH4" target="iframeAluno">Home</a></li>
-            <li><a href="DadosAluno.html" class="descriH4" target="iframeAluno">Dados Pessoais</a></li>
-            <li><a href="#" class="descriH4" target="iframeAluno">Horários</a></li>
+            <li><a href="lembretes.html" class="descriH4" target="iframeAluno" onclick="growIframe('home')">Home</a></li>
+            <li><a href="DadosAluno.html" class="descriH4" target="iframeAluno" onclick="growIframe('dados')">Dados Pessoais</a></li>
+            <li><a href="Aula.html" class="descriH4" target="iframeAluno" onclick="growIframe('agenda')">Horários</a></li>
             <li><a href="../login.html" class="descriH4">Sair</a></li>
         </ul>
 
@@ -70,18 +71,10 @@
                 <div>
                     <h3 class="descriH5">Situação de matricula:</h3>
                     <p id="statusMt" class="descriH5">Inativo</p>
-                    <label class="switch">
-                        <input type="checkbox" id="botaoMt" onclick="matSituation()">
-                        <span class="toggle round"></span>
-                    </label>
                 </div>
                 <div>
                     <h3 class="descriH5">Situação de pagamento:</h3>
                     <p id="statusPg" class="descriH5">Pendente</p>
-                    <label class="switch">
-                        <input type="checkbox" id="botaoPg" onclick="pagSituation()">
-                        <span class="toggle round"></span>
-                    </label>
                 </div>
                 <div>
                     <h3 class="descriH5">

@@ -18,13 +18,17 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1%;
+    padding: 0 4% ;
+    box-sizing: border-box;
 }
 
 .notesArea {
-    width: 100%;    
-    background-color: #E5DDCF;
+    width: 100%;
+    height: 100%;    
+    background-color: var(--corGray200);
+    padding: 2% 1%;
     border: 4px solid #80786C;
-    border-radius: 16px;
+    border-radius: 24px;
 
 }
 .notesArea.prof{
@@ -41,17 +45,123 @@ body {
 }
 
 .note {
-    border-top: 1px solid #111111;
-    border-bottom: 1px solid #111111;
+    width: 100%;
+    border-top: 1px  solid #80786C;
+    padding: 2% 0 2% 2%;
+    box-sizing:border-box ;
 }
 
-p {
+.note p {
     color: #111111;
+    width: 100%;
+}
+.lembrete{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50%;
+    width: 100%;
+    border-top: 1px  solid #80786C;
+}
+.text{
+    display:flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 50%;
+    padding: 2% 0 2% 2%;
+    box-sizing:border-box ;
+}
+.msg{
+    text-align: justify;
+}
+.date{
+    color: #80786C;
+    text-align: left;
+}
+.new{
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 2%;
+}
+.new .insert{
+    display: flex;
+    position: relative;
+    padding: 4% 2% 2% 2%  ;    
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.insert label{
+    position: absolute;
+    padding:  1%;
+    box-sizing: border-box;
+    transition:2s ease ;
+
+}
+.insert textarea{
+    width: 100%;
+    height: 10%;
+    resize: none;
+    text-align: left;
+    background-color: var(--corGray200);
+    border: none;
+}
+.insert textarea:focus{
+    border:2px solid var(--corGray700);
+    background-color: var(--corGray500);
+    transition:.8s ease ;
+
+
+}
+.insert textarea:focus + label{
+    font-size: 16px;
+    top: 6px;
+    padding: 0;
+    transition:2s ease ;
+}
+
+
+/* código referentes a parte da grade de aulas */
+
+.agenda_conteiner{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1% 2%;
+    
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+.criarAula span{
+    font-size: 36px;
+}
+.agenda{
+    width: 100%;
+    background-color:var(--corGray200) ;
+}
+.grade{
+    width: 100%;
+}
+.dayWeek{
+    display: flex;
+    padding: 0 1%;
+    box-sizing: border-box;
+
+}
+.grade th{
+    width: 16%;
+    padding: 2% 4%;
+    box-sizing: border-box;
+    border:1px solid var(--corGray700)
 
 }
 @media screen and (min-width:768px) {
     .notesArea{
-        height: 88%;
+        height: 100%;
         
     }
 }
