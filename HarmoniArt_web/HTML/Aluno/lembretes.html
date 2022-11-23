@@ -15,6 +15,7 @@
     <link rel="icon" type="imagem/png" href="../../IMG/logo.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <script src="../../JavaScript/popUp.js" defer></script>
 </head>
 
 <body>
@@ -27,7 +28,7 @@
                     est a, mattis tellus. Sed dignissim, metus nec</p>
                 <p class="date">Enviado por Prof Saulo em: YYYY/MM/DD</p>
             </div>
-            <div class="delete">
+            <div class="delete" id="bntPop">
                 <span class="material-icons">delete</span>
             </div>
         </div>
@@ -37,7 +38,7 @@
                     est a, mattis tellus. Sed dignissim, metus nec</p>
                 <p class="date">Enviado por Prof Saulo em: YYYY/MM/DD</p>
             </div>
-            <div class="delete">
+            <div class="delete" id="del">
                 <span class="material-icons">delete</span>
             </div>
         </div>
@@ -52,6 +53,21 @@
         <div class="note">
             <p class="descriH5">NÃO HÁ NOVOS LEMBRETES</p>
         </div>
+    </div>
+</div>
+
+    <div id="modal" class="modal-container">
+        <div class="modal delNote">
+            <input type="button" class="fechar" value="X">
+            <span class="material-icons" id="icoDel">delete</span>
+            <h6 class="titleH5">certeza que quer deletar essa Aula?</h6>
+            <form>
+                <div>
+                    <input type="submit" id="cancel" value="Cancelar" class="botaoTerc descriH5">
+                    <input type="submit" value="Deletar" class="callToAction descriH5">
+                </div>
+        </div>
+        </form>
     </div>
 </body>
 

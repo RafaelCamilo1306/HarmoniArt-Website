@@ -9,9 +9,10 @@ function growIframe(link){
             perfil.style.display='flex';
         }
     }else if(link=="agenda"){
+            
             perfil.style.display='none';
             frame.style.width='100%';
-        }else{
+    }else{
         perfil.style.display='flex';
     }
 }

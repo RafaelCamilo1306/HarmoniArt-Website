@@ -165,34 +165,46 @@ body {
     width: 700%;
     height: 100%;
 }
+.aulasMarcadas{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
 .dayWeek{
-        width: 100%;
+    display: flex;
+    width: 100%;
 }
 .grade th{
-    height: 12%;
+    display: inline-flex;
+    justify-content: center;
     width: 14.3%;
-    padding: 2px;
+    padding: 8px 24px;
     box-sizing: border-box;
     border-width:0 1px 1px 0;
     border-style:solid;
     border-color:var(--corGray700);
 }
 .aula-conteiner{
-    height: 80%;
+    height: 100%;
+    width: 100%;
     border-right:1px solid var(--corGray700) ;
-    justify-content: center;
-    align-items: flex-start;
-    display: flex;
 }
 .aula{
     width: 60%;
     max-height: 48%;
+    margin-top: 4%;
+    margin-left: 50%;
+    transform: translatex(-50%);
+    border-radius:8px;
     background-color: var(--corPrimariaMedium);
+}
+.delete#bntPop, #del{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
 }
 .aula #del{
     width: 100%;
-    display: flex;
-    justify-content: flex-end;
 }
 .infoAula div{
     display: flex;
@@ -209,10 +221,6 @@ form #a2,form #a3{
 @media screen and (min-width:768px) {
     .grade{
         width: 100%;
-    }
-    .dayWeek{
-        padding: 0 0 0 1%;
-        box-sizing: border-box;
     }
     .comand{
         justify-content: flex-end;

@@ -120,7 +120,6 @@
 .create{
     display: flex;
     flex-direction: column;
-    width: 32%;
     height: 72%;
     color: var(--corPrimariaLigth);
     background-color: var(--corPrimariaDark100);
@@ -166,7 +165,7 @@
     border-radius: 50%;
     cursor: pointer;
 }
-#delete .modal{
+#delete .modal, .modal.delNote{
     height: 32%;
 }
 .modal #icoDel{
@@ -308,6 +307,10 @@
     }
     .modal{
         width: 36%;
+    }
+    .create{
+        width: 32%;
+        height: 72%;
     }
     .divPerfil{
         width:32% ;
