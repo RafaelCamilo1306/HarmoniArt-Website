@@ -35,7 +35,7 @@
     box-sizing: border-box;
     background: var(--corPrimariaDark100);
     color: var(--corGray500);
-    border: 2px solid var(--corPrimariaMedium);
+    border: 1px solid var(--corPrimariaMedium);
     border-radius: 16px;    
     cursor: pointer;
 }
