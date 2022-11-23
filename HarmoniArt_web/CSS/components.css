@@ -118,15 +118,22 @@
     text-align: center;
 }
 .create{
-    display: flex;
-    flex-direction: column;
     height: 72%;
+    overflow-y: hidden;
     color: var(--corPrimariaLigth);
     background-color: var(--corPrimariaDark100);
     padding: 16px 24px;
     box-sizing: border-box;
     border-radius: 8px;
     box-shadow: 0px 8px 20px rgba(24, 24, 24, 0.08);
+}
+.popUp-conteiner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .modal form, .create form{
@@ -138,7 +145,7 @@
     text-align: center;
 }
 .create form{
-    height: 100%;
+    height: 72%;
 }
 .create form label{
     text-align: left;
@@ -302,8 +309,8 @@
         min-width: 180px;
         max-height:500px ;
     }
-    #delete .modal{
-        height: 40%;
+    #delete .modal, .modal.delNote{
+        height: 32%;
     }
     .modal{
         width: 36%;
