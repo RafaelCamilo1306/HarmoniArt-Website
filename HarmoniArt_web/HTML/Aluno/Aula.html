@@ -19,16 +19,16 @@
     <script src="../../JavaScript/popUp.js" defer></script>
     <script src="../../JavaScript/popUp-del.js" defer></script>
     <script src="../../JavaScript/showInput.js" defer></script>
-    <script src="../../JavaScript/growFrame.js" defer></script>
+    <script src="../../JavaScript/agendaCarrossel.js" defer></script>
 
 </head>
 
-<body onload="growIframe('agenda')">
-    <div class="agenda_conteiner">
+<body onload="carrossel()">
+    <div class="agenda_conteiner" onmousemove="zeraCont()">
         <div class="comand">
             <div class="navega">
-                <span class="material-icons" id="avancar">chevron_left</span>
-                <span class="material-icons" id="voltar">chevron_right</span>
+                <span class="material-icons" id="voltar" >chevron_left</span>
+                <span class="material-icons" id="avancar">chevron_right</span>
             </div>
         </div>
         <div class="agenda">
