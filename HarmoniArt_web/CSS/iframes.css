@@ -155,6 +155,7 @@ body {
 .navega span{
     font-size: 36px;
     color: var(--corGray100);
+    cursor: pointer;
 }
 .agenda{
     border: 4px solid #80786C;
