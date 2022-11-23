@@ -15,8 +15,9 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" type="imagem/png" href="../../IMG/logo.png">
-    
+
     <script src="../../JavaScript/popUp.js" defer></script>
+    <script src="../../JavaScript/showInput.js" defer></script>
 
 </head>
 
@@ -27,14 +28,14 @@
                 <span class="material-icons" id="avancar">chevron_left</span>
                 <span class="material-icons" id="voltar">chevron_right</span>
             </div>
-            <div class="criarAula" >
+            <div class="criarAula">
                 <span class="material-icons" id="bntPop">add</span>
             </div>
         </div>
         <div class="agenda">
             <table class="grade">
                 <tr class="dayWeek">
-                    <th >Domingo</th>
+                    <th>Domingo</th>
                     <th>Segunda</th>
                     <th>Terça</th>
                     <th>Quarta</th>
@@ -45,7 +46,20 @@
                 <tr>
                     <td class="aula-conteiner">
                         <div class="aula">
-
+                            <div class="infoAula">
+                                <input class="exibir">
+                                <div>
+                                <label>Horário:</label>
+                                <input type="datetime" class="exibir descriH5">
+                                </div>
+                                <div>
+                                    <label>Professor:</label>
+                                    <input type="text" class="exibir descriH5">
+                                </div>
+                            </div>
+                            <div id="del">
+                                <span class="material-icons">delete</span>
+                            </div>
                         </div>
                     </td>
                     <td class="aula-conteiner">b</td>
@@ -63,25 +77,28 @@
 
     <div id="modal" class="modal-container">
         <div class="create">
+            <h6 class="titleH5">Inscreva-se para uma aula grátis</h6>
             <form>
-                <label>Quantidade de alunos</label>
-                <select name="quantAluno" class="dropDown descriH5" onchange="showInput()">
+                <label>Quantidade de alunos:</label>
+                <select name="quantAluno" id="quant" class="dropDown descriH5" onchange="showInput()">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                 </select>
-                <fieldset>
-                <label></label>
-                <input type="text" name="aluno1">
-                <input type="text" name="aluno2">
-                <input type="text" name="aluno3">
-                </fieldset>
+                <label>Nome dos alunos:</label>
+                <input type="text" class="inputs descriH5" name="aluno1">
+                <input type="text" class="inputs descriH5" name="aluno2" id="a2">
 
-                <input type="text"name="dia">
-                <input type="datetime" name="horario" id="">
-                <div>   
+                <input type="text" class="inputs descriH5" name="aluno3" id="a3">
+
+                <label for="dia">Dia da Semana:</label>
+                <input type="text" class="inputs descriH5" name="dia" id="dia">
+
+                <label for="hora">Horário:</label>
+                <input type="datetime" class="inputs descriH5" name="horario" id="hora">
+                <div>
                     <input type="submit" id="cancel" value="Cancelar" class="botaoTerc descriH5">
-                    <input type="submit" value="Inscrever-se" class="callToAction descriH5">
+                    <input type="submit" value="Cadastrar" class="callToAction descriH5">
                 </div>
             </form>
         </div>
@@ -90,15 +107,16 @@
     <div id="delete" class="modal-container">
         <div class="modal">
             <input type="button" class="fechar" value="X">
-            <h6 class="titleH5">Inscreva-se para uma aula grátis</h6>
+            <span class="material-icons" id="icoDel">delete</span>
+            <h6 class="titleH5">certeza que quer deletar essa Aula?</h6>
             <form>
-                <input type="text" name="" id="" class="inputs descriH5" placeholder="Nome Completo:">
-                <input type="email" name="" id="" class="inputs descriH5" placeholder="Email:">
                 <div>
-                    <input type="submit" value="Inscrever-se" class="callToAction descriH5">
+                    <input type="submit" id="cancel" value="Cancelar" class="botaoTerc descriH5">
+                    <input type="submit" value="Deletar" class="callToAction descriH5">
                 </div>
-            </form>
         </div>
+        </form>
+    </div>
     </div>
 
 </body>

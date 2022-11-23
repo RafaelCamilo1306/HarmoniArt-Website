@@ -67,7 +67,7 @@
 }
 .exibir {/*códigos para os inputs exclusivos para exibição de informação*/
     width: 100%;
-    background-color: var(--corGray200);
+    background:none;
     border: none;
     border-bottom: 1px solid #111111;
     outline: none;
@@ -118,24 +118,31 @@
     text-align: center;
 }
 .create{
-    width: 32%;
-    height: 60%;
-    color: var(--corPrimariaLigth);
-    background-color: var(--corPrimariaDark100);
-    padding: 4px 8px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    width: 32%;
+    height: 72%;
+    color: var(--corPrimariaLigth);
+    background-color: var(--corPrimariaDark100);
+    padding: 16px 24px;
+    box-sizing: border-box;
     border-radius: 8px;
     box-shadow: 0px 8px 20px rgba(24, 24, 24, 0.08);
 }
-.modal form , .create form{
+
+.modal form, .create form{
     width: 100%;
     height: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+}
+.create form{
+    height: 100%;
+}
+.create form label{
+    text-align: left;
 
 }
 @keyframes modal {
@@ -158,6 +165,14 @@
     border: none;
     border-radius: 50%;
     cursor: pointer;
+}
+#delete .modal{
+    height: 32%;
+}
+.modal #icoDel{
+    font-size: 120px;
+    color: var(--corPrimariaMedium);
+
 }
 /* códigos sobre o botão para voltar ao topo da página inicial */
 .bnt-backTop{
@@ -287,6 +302,9 @@
         width: 20%;
         min-width: 180px;
         max-height:500px ;
+    }
+    #delete .modal{
+        height: 40%;
     }
     .modal{
         width: 36%;

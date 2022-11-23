@@ -1,11 +1,11 @@
 let bnt = document.querySelector('#bntPop');
-let exl = document.querySelector(".del")
+let exl = document.querySelector("#del")
 // evento de click para ativar a função;
 bnt.addEventListener('click', () => iniciaModal('modal'));
-
+exl.addEventListener('click', ()=> iniciaModal('delete'));;
 function iniciaModal(modalID) {
     const modal = document.getElementById(modalID);
-    if (modal.id == 'modal') {
+    if (modal.id == 'modal'|| modal.id=='delete') {
         // condição parar verificar se na varivel contem algum elemento
         modal.classList.add('mostrar');
         modal.addEventListener('click', (e) => {
