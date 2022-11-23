@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" onmousemove="zeraCont()">
 
 <head>
     <meta charset="UTF-8">
@@ -24,7 +24,7 @@
 </head>
 
 <body onload="carrossel()">
-    <div class="agenda_conteiner" onmousemove="zeraCont()">
+    <div class="agenda_conteiner" >
         <div class="comand">
             <div class="navega">
                 <span class="material-icons" id="voltar" >chevron_left</span>
@@ -44,6 +44,22 @@
                 </tr>
                 <tr class="aulasMarcadas">
                     <td class="aula-conteiner">
+                        <div class="aula">
+                            <div class="infoAula">
+                                <input class="exibir">
+                                <div>
+                                    <label>Horário:</label>
+                                    <input type="datetime" class="exibir descriH5">
+                                </div>
+                                <div>
+                                    <label>Professor:</label>
+                                    <input type="text" class="exibir descriH5">
+                                </div>
+                            </div>
+                            <div class="delete" onclick="iniciaDel('delete')" id="del">
+                                <span class="material-icons">delete</span>
+                            </div>
+                        </div>
                         <div class="aula">
                             <div class="infoAula">
                                 <input class="exibir">
