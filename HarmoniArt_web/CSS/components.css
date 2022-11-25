@@ -30,7 +30,7 @@
 
 /* design botão terciário */
 .botaoTerc {
-    padding: 8px 16px;
+    padding: 2% 6%;
     text-align: center;
     box-sizing: border-box;
     background: var(--corPrimariaDark100);
@@ -71,6 +71,17 @@
     border: none;
     border-bottom: 1px solid #111111;
     outline: none;
+}
+
+.file{
+    color: var(--corPrimariaDark100);
+}
+.file #file-update-button{
+    padding: 2% 6%;
+    text-align: center;
+    box-sizing: border-box;
+    background: var(--corPrimariaMedium);
+    border-radius: 16px;
 }
 
 .divLogo {
@@ -141,8 +152,11 @@
     height: 75%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
+}
+#fotoSwitch{
+    height: auto;
 }
 .create form{
     height: 72%;
@@ -310,7 +324,7 @@
         max-height:500px ;
     }
     #delete .modal, .modal.delNote{
-        height: 32%;
+        height: 48%;
     }
     .modal{
         width: 36%;

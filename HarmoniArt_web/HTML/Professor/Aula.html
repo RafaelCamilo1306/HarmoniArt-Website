@@ -17,9 +17,7 @@
     <link rel="icon" type="imagem/png" href="../../IMG/logo.png">
 
     <script src="../../JavaScript/popUp.js" defer></script>
-    <script src="../../JavaScript/popUp-del.js" defer></script>
     <script src="../../JavaScript/showInput.js" defer></script>
-    <script src="../../JavaScript/growFrame.js" defer></script>
     <script src="../../JavaScript/agendaCarrossel.js" defer></script>
 
 </head>
@@ -32,7 +30,7 @@
                 <span class="material-icons" id="avancar">chevron_right</span>
             </div>
             <div class="criarAula">
-                <span class="material-icons" id="bntPop">add</span>
+                <span class="material-icons" onclick="iniciaModal('modal')" id="bntPop">add</span>
             </div>
         </div>
         <div class="agenda">
@@ -60,7 +58,7 @@
                                     <input type="text" class="exibir descriH5">
                                 </div>
                             </div>
-                            <div class="delete" onclick="iniciaDel('delete')" id="del">
+                            <div class="delete" onclick="iniciaModal('delete')" id="del">
                                 <span class="material-icons">delete</span>
                             </div>
                         </div>

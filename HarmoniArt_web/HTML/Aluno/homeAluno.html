@@ -18,6 +18,8 @@
     <script src="../../JavaScript/statusCad.js" defer></script>
     <script src="../../JavaScript/growFrame.js" defer></script>
     <script src="../../JavaScript/botaoExpand.js" defer></script>
+    <script src="../../JavaScript/popUp.js" defer></script>
+
 </head>
 
 <body onload="statusOnload()">
@@ -50,7 +52,7 @@
             <div class="perfilContent">
                 <h2 class="descriH5" style="font-weight: 500;">Indentificação do Aluno</h2>
                 <img src="../../IMG/perfil.png" alt="">
-                <input type="submit" value="Alterar imagem" class="callToAction descriH5">
+                <input type="submit" value="Alterar imagem" onclick="iniciaModal('changeImage')" class="callToAction descriH5">
                 <div>
                     <h3 class="descriH5">Nome:</h3>
                     <input type="text" name="nome" class="exibir" readonly>
@@ -100,6 +102,36 @@
         <iframe src="lembretes.html" name="iframeAluno" class="home-content"></iframe>
     </div>
     
+    <!-- modal(Pop-up) pra mudar a imagem -->
+    <div id="changeImage" class="modal-container">
+        <div class="modal changeImg">
+            <input type="button" class="fechar" value="X">
+            <h6 class="titleH5">Insira o arquivo de imagem</h6>
+            <form>
+                <input type="file" name="userImg" class="inputs file">
+                <div>
+                    <input type="button" id="cancel" value="Cancelar" class="botaoTerc descriH5">
+                    <input type="button" onclick="verificaModal('changeImage')"  value="Alterar" class="callToAction descriH5">
+                </div>
+        </div>
+        </form>
+    </div>
+
+    
+    <!-- modal(Pop-up) para confirmar a mudança de imagem -->
+    <div id="confirmChange" class="modal-container">
+        <div class="modal changeImg">
+            <input type="button" class="fechar" value="X">
+            <span class="material-icons" id="icoDel">cameraswitch</span>
+            <h6 class="titleH5">certeza que quer Alterar?</h6>
+            <form id="fotoSwitch">
+                <div>
+                    <input type="submit" id="cancel" value="Cancelar" class="botaoTerc descriH5">
+                    <input type="submit" value="Confirmar" class="callToAction descriH5">
+                </div>
+        </div>
+        </form>
+    </div>
 </body>
 
 </html>
