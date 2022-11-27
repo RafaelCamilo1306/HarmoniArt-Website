@@ -145,6 +145,7 @@ body {
 .criarAula span{
     font-size: 36px;
     color: var(--corGray100);
+    cursor: pointer;
     
 }
 .navega{
