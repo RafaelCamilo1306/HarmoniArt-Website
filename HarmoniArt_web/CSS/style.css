@@ -609,6 +609,10 @@ footer {
     display: flex;
     flex-direction: column;
 }
+.recoverySenha.email div{
+    height: 50%;
+    justify-content: space-around;
+}
 .recoverySenha input[type=submit],.modal form input[type=button]{
     width: 36%;
 }
