@@ -499,7 +499,7 @@ footer {
 }
 
 #entrar input[type=text], input[type=password] {
-    width: 85%;
+    width: 100%;
 }
 
 #entrar label {

@@ -58,6 +58,7 @@
     flex-direction: row;
     align-items: flex-start;
     padding: 8px 16px 8px 16px;
+    box-sizing: border-box;
     gap: 10px;
     background: #CCC4B8;
     border: 2px solid #D9CCB8;

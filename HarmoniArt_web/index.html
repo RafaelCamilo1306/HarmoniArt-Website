@@ -26,9 +26,9 @@
     <div id="cabecario">
         <div id="AreaExclusiva">
             <div class="redes">
-                <a href="#"><img src="IMG/facebook.png"></a>
-                <a href="#"><img src="IMG/insta.png"></a>
-                <a href="#"><img src="IMG/whats.png"></a>
+                <a href="https://m.facebook.com/harmoniart.n.m/" target="_blank"><img src="IMG/facebook.png"></a>
+                <a href="https://www.instagram.com/harmoniart.n.e.m/" target="_blank"><img src="IMG/insta.png"></a>
+                <a href="https://wa.me/5511983686166?text=Ol%C3%A1,%20vim%20redirecionado%20a%20partir%20do%20website%20Harmoniart.%20Gostaria%20de%20conhecer%20melhor%20o%20n%C3%BAcleo%20musical" target="_blank"><img src="IMG/whats.png"></a>
             </div>
             <a href="HTML/login.html" class="botaoSec descriH5">
                 <nobr>Área Exclusiva</nobr>
@@ -350,13 +350,18 @@
             <hr>
             <!-- Form para escrever uma mensagem para um email cadastrado -->
             <div class="contactForm">
-                <form action="" method="post">
-                    <input type="text" name="" placeholder="Nome Completo" class="inputs">
-                    <input type="text" name="" placeholder="Email" class="inputs">
-                    <textarea name=" " placeholder="Escreva sua mensagem" class="inputs" cols="30" rows="10"></textarea>
+                <form action="https://formsubmit.co/rafael.camilo1306@gmail.com" method="post">
+                    <input type="text" name="nome" placeholder="Nome Completo:" class="inputs" required>
+                    <input type="email" name="email" placeholder="Email" class="inputs" required>
+                    <textarea name="mensagem" placeholder="Escreva sua mensagem" class="inputs" cols="30" rows="10" required></textarea>
                     <div>
                         <input type="submit" class="callToAction descriH5" value="Enviar Mensagem">
                     </div>
+                    <input type="hidden" name="_subject" value="Novo Contato!">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_template" value="box">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/HarmoniArt_web/index.html">
+                    <input type="hidden" name="_autoresponse" value="Olá HarmoniArt Núcleo de Ensino Musical agradece seu contato, logo responderemos">
                 </form>
             </div>
         </div>
@@ -401,9 +406,9 @@
             <div class="linha" style="background-color: #131313;"></div>
         </div>
         <div class="redesFoot">
-            <a href="#"><img src="IMG/facebookFoot.png"></a>
-            <a href="#"><img src="IMG/instaFoot.png"></a>
-            <a href="#"><img src="IMG/whatsFoot.png"></a>
+            <a href="https://m.facebook.com/harmoniart.n.m/" target="_blank" ><img src="IMG/facebookFoot.png"></a>
+            <a href="https://www.instagram.com/harmoniart.n.e.m/" target="_blank"><img src="IMG/instaFoot.png"></a>
+            <a href="https://wa.me/5511983686166?text=Ol%C3%A1,%20vim%20redirecionado%20a%20partir%20do%20website%20Harmoniart.%20Gostaria%20de%20conhecer%20melhor%20o%20n%C3%BAcleo%20musical" target="_blank"><img src="IMG/whatsFoot.png"></a>
         </div>
 
     </footer>
@@ -413,12 +418,17 @@
         <div class="modal">
             <input type="button" class="fechar" value="X">
             <h6 class="titleH5">Inscreva-se para uma aula grátis</h6>
-            <form style="height: 100%;">
-                <input type="text" name="" id="" class="inputs descriH5" placeholder="Nome Completo:">
-                <input type="email" name="" id="" class="inputs descriH5" placeholder="Email:">
+            <form action="https://formsubmit.co/rafael.camilo1306@gmail.com" method="post" style="height: 100%;">
+                <input type="text" name="nome" id="" class="inputs descriH5" placeholder="Nome Completo:">
+                <input type="email" name="email" id="" class="inputs descriH5" placeholder="Email:">
                 <div>
                     <input type="submit" value="Inscrever-se" class="callToAction descriH5">
                 </div>
+                <input type="hidden" name="_subject" value="NOVA INSCRIÇÃO!">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_template" value="box">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/HarmoniArt_web/index.html">
+                    <input type="hidden" name="_autoresponse" value="Olá HarmoniArt Núcleo de Ensino Musical agradece seu contato, logo entraremos em contato para marcar sua aula grátis">
             </form>
         </div>
     </div>
