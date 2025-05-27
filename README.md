@@ -30,11 +30,13 @@ O projeto consiste em:
 
 ## 📸 Demonstração
 
-Desktop view
+####Desktop view
+
  ![image](https://github.com/user-attachments/assets/41c2e065-f4c1-4a61-a3a0-1ef1219f1c42)
  ![image](https://github.com/user-attachments/assets/2835ec38-c3ed-4520-86fc-cb2442830fd2)
 
-Mobile
+####Mobile
+
  ![image](https://github.com/user-attachments/assets/67652425-d3fb-4b38-84e6-8a3d4c01f3bf)
 
 
