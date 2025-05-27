@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área exclusiva-Aulas</title>
+    <link rel="stylesheet" href="../../CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="../../CSS/nav.css" type="text/css">
+    <link rel="stylesheet" href="../../CSS/geral.css" type="text/css">
+    <link rel="stylesheet" href="../../CSS/components.css" type="text/css">
+    <link rel="stylesheet" href="../../CSS/tipografia.css" type="text/css">
+    <link rel="stylesheet" href="../../CSS/iframes.css" type="text/css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="imagem/png" href="../../IMG/logo.png">
+
+    <script src="../../JavaScript/popUp.js" defer></script>
+    <script src="../../JavaScript/agendaCarrossel.js" defer></script>
+
+</head>
+
+<body onload="carrossel()">
+    <div class="agenda_conteiner" >
+        <div class="comand">
+            <div class="navega">
+                <span class="material-icons" id="voltar" >chevron_left</span>
+                <span class="material-icons" id="avancar">chevron_right</span>
+            </div>
+        </div>
+        <div class="agenda">
+            <table class="grade">
+                <tr class="dayWeek">
+                    <th>Domingo</th>
+                    <th>Segunda</th>
+                    <th>Terça</th>
+                    <th>Quarta</th>
+                    <th>Quinta</th>
+                    <th>Sexta</th>
+                    <th>Sábado</th>
+                </tr>
+                <tr class="aulasMarcadas">
+                    <td class="aula-conteiner">
+                        <div class="aula">
+                            <div class="infoAula">
+                                <input class="exibir">
+                                <div>
+                                    <label>Horário:</label>
+                                    <input type="datetime" class="exibir descriH5">
+                                </div>
+                                <div>
+                                    <label>Professor:</label>
+                                    <input type="text" class="exibir descriH5">
+                                </div>
+                            </div>
+                            <div class="delete" onclick="iniciaModal('delete')" id="del">
+                                <span class="material-icons">delete</span>
+                            </div>
+                        </div>
+                        <div class="aula">
+                            <div class="infoAula">
+                                <input class="exibir">
+                                <div>
+                                    <label>Horário:</label>
+                                    <input type="datetime" class="exibir descriH5">
+                                </div>
+                                <div>
+                                    <label>Professor:</label>
+                                    <input type="text" class="exibir descriH5">
+                                </div>
+                            </div>
+                            <div class="delete" onclick="iniciaModal('delete')" id="del">
+                                <span class="material-icons">delete</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="aula-conteiner">b</td>
+                    <td class="aula-conteiner">c</td>
+                    <td class="aula-conteiner">d</td>
+                    <td class="aula-conteiner">e</td>
+                    <td class="aula-conteiner">f</td>
+                    <td class="aula-conteiner">
+                        <div class="aula">
+                            <div class="infoAula">
+                                <input class="exibir">
+                                <div>
+                                    <label>Horário:</label>
+                                    <input type="datetime" class="exibir descriH5">
+                                </div>
+                                <div>
+                                    <label>Professor:</label>
+                                    <input type="text" class="exibir descriH5">
+                                </div>
+                            </div>
+                            <div class="delete" onclick="iniciaDel('delete')" id="del">
+                                <span class="material-icons">delete</span>
+                            </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+    <div id="modal" class="modal-container">
+        <div class="create">
+            <h6 class="titleH5">Criação de Aula</h6>
+            <form>
+                <label>Quantidade de alunos:</label>
+                <select name="quantAluno" id="quant" class="dropDown descriH5" onchange="showInput()">
+                    <option value="1"> 1 </option>
+                </select>
+                <label>Nome dos alunos:</label>
+                <input type="text" class="inputs descriH5" name="aluno1">
+
+                <label for="dia">Dia da Semana:</label>
+                <input type="text" class="inputs descriH5" name="dia" id="dia">
+
+                <label for="hora">Horário:</label>
+                <input type="datetime" class="inputs descriH5" name="horario" id="hora">
+                <div>
+                    <input type="submit" id="cancel" value="Cancelar" class="botaoTerc descriH5">
+                    <input type="submit" value="Cadastrar" class="callToAction descriH5">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="delete" class="modal-container">
+        <div class="modal">
+            <input type="button" class="fechar" value="X">
+            <span class="material-icons" id="icoDel">delete</span>
+            <h6 class="titleH5">certeza que quer deletar essa Aula?</h6>
+            <form>
+                <div>
+                    <input type="submit" id="cancel" value="Cancelar" class="botaoTerc descriH5">
+                    <input type="submit" value="Deletar" class="callToAction descriH5">
+                </div>
+        </div>
+        </form>
+    </div>
+    </div>
+
+</body>
+
+</html>

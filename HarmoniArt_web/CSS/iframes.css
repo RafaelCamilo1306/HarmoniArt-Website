@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    padding: 0 4% ;
+    box-sizing: border-box;
+}
+
+.notesArea {
+    width: 100%;
+    background-color: var(--corGray200);
+    padding: 2% 1%;
+    border: 4px solid #80786C;
+    border-radius: 24px;
+
+}
+.notesArea.prof{
+    position: relative;
+    padding: 0;
+}
+.update{
+    padding: 36px 16px ;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.note {
+    width: 100%;
+    border-top: 1px  solid #80786C;
+    padding: 2% 0 2% 2%;
+    box-sizing:border-box ;
+}
+
+.note p {
+    color: #111111;
+    width: 100%;
+}
+.lembrete{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    border-top: 1px  solid #80786C;
+}
+.lembrete.aluno{
+    justify-content: flex-start;
+
+}
+.text{
+    display:flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 50%;
+    padding: 2% 0 2% 2%;
+    box-sizing:border-box ;
+}
+.msg{
+    text-align: justify;
+}
+.date{
+    color: #80786C;
+    text-align: left;
+}
+.new{
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 2%;
+}
+.new .insert{
+    display: flex;
+    position: relative;
+    padding: 4% 2% 2% 2%  ;    
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.insert label{
+    position: absolute;
+    padding: 1%;
+    top: 16px;
+    left: 24px;
+    box-sizing: border-box;
+    transition: 2s ease;
+}
+.insert textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    text-align: left;
+    background-color: var(--corGray200);
+    border: none;
+}
+.insert textarea:focus{
+    border:2px solid var(--corGray700);
+    background-color: var(--corGray500);
+    transition:.8s ease ;
+
+
+}
+.insert textarea:focus + label{
+    font-size: 16px;
+    top: 6px;
+    padding: 0;
+    transition:2s ease ;
+}
+
+
+/* código referentes a parte da grade de aulas */
+
+.agenda_conteiner{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1% 2%;
+    
+    width: 100%;
+    height: 100%;
+}
+.comand{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.criarAula span{
+    font-size: 36px;
+    color: var(--corGray100);
+    cursor: pointer;
+    
+}
+.navega{
+    display: flex;
+    gap: 2%;
+    width: 28%;
+}
+.navega span{
+    font-size: 36px;
+    color: var(--corGray100);
+    cursor: pointer;
+}
+.agenda{
+    border: 4px solid #80786C;
+    border-radius: 24px;
+    width: 100%;
+    overflow-x: hidden;
+    background-color:var(--corGray200) ;
+}
+.grade{
+    margin-left: 0px;
+    width: 700%;
+    height: 100%;
+    min-height: 600px;
+}
+.aulasMarcadas{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.dayWeek{
+    display: flex;
+    width: 100%;
+}
+.grade th{
+    display: inline-flex;
+    justify-content: center;
+    width: 14.3%;
+    padding: 8px 24px;
+    box-sizing: border-box;
+    border-width:0 1px 1px 0;
+    border-style:solid;
+    border-color:var(--corGray700);
+}
+.aula-conteiner{
+    height: 100%;
+    width: 100%;
+    border-right:1px solid var(--corGray700) ;
+}
+.aula{
+    width: 60%;
+    max-height: 48%;
+    margin-top: 4%;
+    margin-left: 50%;
+    transform: translatex(-50%);
+    border-radius:8px;
+    background-color: var(--corPrimariaMedium);
+}
+.delete#bntPop, #del{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.aula #del{
+    width: 100%;
+}
+.infoAula div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 4px;
+}
+
+form #a2,form #a3{
+    display: none;
+}
+#formQuant{
+    gap: 8%;
+    height: 20%;
+    margin: 4% 0;
+}
+#formQuant label{
+    text-align: left;
+}
+
+
+@media screen and (min-width:768px) {
+    .grade{
+        width: 100%;
+    }
+    .comand{
+        justify-content: flex-end;
+    }
+    .navega{
+        display: none;
+    }.aula{
+        width: 100%;
+    }.lembrete{
+        gap: 50%;
+    }
+}

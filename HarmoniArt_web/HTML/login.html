@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>HarmoniArt-Login</title>
+    <link rel="stylesheet" href="../CSS/nav.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/geral.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/imagens.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/components.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/tipografia.css" type="text/css">
+    <link rel="icon" type="imagem/png" href="../IMG/logo.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body id="login-container">
+    <div id="login">
+        <div class="divLogo log">
+            <a href="../index.html">
+                <img src="../IMG/logo2.png" id="logo2">
+                <h1 class="logoTXT descriH3" id="logoLogin">
+                    <nobr>Harmoniart <b>Núcleo</b></nobr> <br><b> de Ensino</b> Musical
+                </h1>
+            </a>
+        </div>
+
+        <form id="entrar" action="Professor/homeProf.html">
+            <div id="selecao">
+                <label for="" class="descriH5">
+                    <nobr>entrar como</nobr>
+                </label>
+                <div id="div_select_login">
+                    <select class="dropDown descriH5" id="options" onChange="changeOp()">
+
+                        <option value="escolha" class="descriH5">Escolha...</option>
+                        <option value="aluno" class="descriH5">Aluno</option>
+                        <option value="professor" class="descriH5">Professor</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label for="" class="descriH4">Usuario</label>
+                <input type="text" class="inputs" name="user">
+            </div>
+
+            <div>
+                <label for="" class="descriH4">Senha</label>
+                <input type="password" class="inputs" name="pass">
+                <div id="recovery">
+                    <a href="recuperar_senha.html" class="descriH5">Esqueci minha senha.</a>
+                </div>
+            </div>
+
+            <input type="submit" value="Enviar" class="callToAction descriH5" onclick="changePage()">
+        </form>
+    </div>
+
+    <img src="../IMG/fundoLogin.png" alt="" id="fundoLogin">
+
+    <script>
+        function changeOp() {
+            let select = document.getElementById("options");
+            const formulario= document.querySelector("#entrar");
+            let optionValue = select.options[select.selectedIndex];
+            let value = optionValue.value;
+            if(value=="aluno"){
+                formulario.action="Aluno/homeAluno.html"
+            }else{
+                formulario.action="Professor/homeProf.html"
+
+            }
+        }
+    </script>
+</body>
+
+</html>
